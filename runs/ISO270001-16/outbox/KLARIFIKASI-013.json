@@ -1,0 +1,42 @@
+{
+ "id": "KLARIFIKASI-013",
+ "kind": "klarifikasi",
+ "title": "KLARIFIKASI KL-03 - A.8.7 Proteksi malware (cyber-security): daftar pengecualian EDR, log deteksi, awareness",
+ "created": "2026-11-07T10:34:14+07:00",
+ "status": "ANSWERED",
+ "sha256": "1163f69a17978d4d6cfa8e25635cb75224ce88914a68b80de744854580420097",
+ "payload": {
+  "run": "ISO270001-16",
+  "jenis": "klarifikasi bukti FASE 4 (SIGAP v5.2 §2 / §4)",
+  "id_klarifikasi": "KL-03",
+  "item": "A.8.7",
+  "judul_item": "Proteksi terhadap malware",
+  "owner": "cyber-security",
+  "pic_kontak": "c02 — Fajar Hidayat (Staf IT Cyber Security, Makassar, WITA)",
+  "task_pengumpul": "cyber-security",
+  "butir_kurang": "Butir 3 (bukti integrasi proteksi dengan program awareness pengguna) — baru rencana, belum ada bukti pelaksanaan; butir 1 (cakupan EDR) — 4 aset tanpa EDR disebut \"pengecualian resmi\" tetapi daftar pengecualian tidak dilampirkan; butir 2 (detection log) — hanya ringkasan Q3 dan rekap tiket, tanpa log deteksi mentah.",
+  "pertanyaan": "Kepada PIC c02 (Fajar Hidayat, IT Cyber Security) melalui task pengumpul cyber-security: (a) ev-a8-07-config-malware.md menyatakan 4 VM uji belum tercover EDR dan \"tercatat pengecualian resmi\", namun daftar pengecualian tidak dilampirkan — apakah daftar aset pengecualian beserta justifikasi dan persetujuannya tersedia di Data-Operation? (b) Apakah log deteksi mentah EDR dapat diekspor dan tersedia sebagai dokumen, atau ringkasan Q3 2026 + Rekap Tiket Event adalah satu-satunya bentuk yang tersedia? (c) Apakah ada bukti pelaksanaan program awareness pengguna yang terkait malware (materi, daftar hadir, hasil simulasi) — simulasi phishing baru terjadwal November 2026 sehingga belum ada bukti pelaksanaan per 29 Oktober 2026?",
+  "bukti_terkait_di_indeks": [
+   "ev-a8-07-config-malware.md",
+   "Rekap Tiket Event dan Keputusan Klasifikasi Q3-2026.csv",
+   "Statistik Pelaporan Event 2026 Q1-Q3.csv",
+   "Post-Mortem dan Pembelajaran INC-2026-013.md"
+  ],
+  "options": [
+   "Dokumen tersedia di Data-Operation",
+   "Akan tersedia (tanggal)",
+   "Belum tersedia",
+   "Perlu diskusi"
+  ],
+  "catatan": "Keputusan diambil MANUSIA di dashboard http://127.0.0.1:4173/?run=ISO270001-16#approvals. Auditor DILARANG menjawab sendiri. Jawaban kartu disalin ke klarifikasi-bukti.json pada turn berikutnya sebagai jawaban_kartu + conversation = \"dashboard #approvals\" (state.js menolak status dijawab tanpa keduanya). Teks bebas bukan approval."
+ },
+ "history": [
+  {
+   "at": "2026-11-07T10:37:26+07:00",
+   "option": "Belum tersedia",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  }
+ ],
+ "answer": "Belum tersedia"
+}

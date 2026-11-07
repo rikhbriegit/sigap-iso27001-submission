@@ -1,0 +1,45 @@
+{
+ "id": "CALENDAR-017",
+ "kind": "calendar",
+ "title": "Undangan follow-up kickoff (Andi Pratama + Rina Kartika) - 13 Nov 13:00 WIB",
+ "created": "2026-11-07T10:44:07+07:00",
+ "status": "EXECUTED",
+ "sha256": "3059da338f4d0a4a821ede94c5a0355aba146200d6f44cd3baae211737ceef11",
+ "payload": {
+  "to": [
+   "rikh.brie+datacenter@gmail.com",
+   "rikh.brie+network@gmail.com"
+  ],
+  "peserta": [
+   "rikh.brie+datacenter@gmail.com",
+   "rikh.brie+network@gmail.com",
+   "rikh.brie@gmail.com"
+  ],
+  "subject": "Undangan: Follow-up Kickoff Audit ISO 27001 (ISO270001-16)",
+  "body": "Yth. Bapak Andi Pratama dan Ibu Rina Kartika,\n\nDengan hormat, kami mengundang Bapak/Ibu untuk rapat tindak lanjut kickoff audit ISO 27001 pada:\n\nHari/tanggal: Jumat, 13 November 2026\nWaktu: 13:00-13:30 WIB\nAgenda: Tindak lanjut kickoff audit, koordinasi bukti kontrol akses (A.5.15), dan backup informasi (A.8.13).\nPeserta: Andi Pratama (IT Data Center & Server), Rina Kartika (IT Network & User), Rikh (Manager IT).\n\nMohon konfirmasi kehadiran Bapak/Ibu. Terima kasih.\n\nSalam,\nRikh\nManager IT",
+  "tanggal": "2026-11-13",
+  "waktu": "13:00-13:30 WIB",
+  "durasi_menit": 30,
+  "agenda": "Tindak lanjut kickoff audit ISO 27001, koordinasi bukti A.5.15 dan A.8.13",
+  "catatan": "Isi pesan dibersihkan dari catatan internal (tanpa id item, nama tool, status persetujuan) setelah draf sebelumnya gagal pada pemeriksaan itu. Peserta c03+c04+c05 sudah diverifikasi bebas bentrok jadwal. Notulen tidak dilampirkan karena rapat kickoff 10 November 2026 belum berlangsung.",
+  "options": [
+   "Revisi",
+   "Tolak",
+   "Tunda",
+   "Setujui sesuai preview"
+  ]
+ },
+ "history": [
+  {
+   "at": "2026-11-07T10:44:36+07:00",
+   "option": "Setujui sesuai preview",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  },
+  {
+   "at": "2026-11-07T10:54:58+07:00",
+   "executed": "gmail:1a1b4251a014bf23"
+  }
+ ],
+ "result": "gmail:1a1b4251a014bf23"
+}

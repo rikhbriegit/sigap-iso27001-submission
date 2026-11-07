@@ -1,0 +1,138 @@
+{
+ "run": "ISO270001-16",
+ "versi_skill": "5.2",
+ "fase": "FASE 4 — Kelengkapan bukti (Auditor EKSTERNAL)",
+ "disusun_oleh": "Auditor ISO 27001 EKSTERNAL (rikh.brie+assesor@gmail.com)",
+ "dibuat": "2026-11-07T10:34:00+07:00",
+ "status": "FASE 4 SELESAI; FASE 5 (penilaian) DIJALANKAN pada turn ini — kelima klarifikasi sudah DIJAWAB manusia di dashboard #approvals dengan pilihan \"Belum tersedia\" (KLARIFIKASI-011..015). Auditor tidak menjawab sendiri.",
+ "sumber": [
+  "runs/ISO270001-16/requests.json (5 permintaan, semuanya dikumpulkan)",
+  "runs/ISO270001-16/evidence-index.json (18 entri; keluaran tools/evidence.js list)",
+  "runs/ISO270001-16/selection-<owner>.json (pemetaan item ke berkas)",
+  "berkas bukti di dalam indeks ISO 27001/Evidence/ISO270001-16/<owner>/ SAJA"
+ ],
+ "metode": "Bandingkan setiap butir bukti_diminta pada requests.json dengan berkas yang terindeks. Butir tanpa berkas pendukung atau hanya terjawab sebagian diajukan sebagai klarifikasi kepada pemiliknya. Auditor TIDAK menjawab sendiri, TIDAK menilai conformity pada FASE 4, dan TIDAK memakai bukti kontrol lain sebagai pengganti (SKILL §0.4, §4 FASE 4).",
+ "ringkasan": {
+  "item_fokus": 5,
+  "butir_diminta": 15,
+  "butir_ada_penuh": 4,
+  "butir_ada_sebagian": 10,
+  "butir_tanpa_bukti_di_indeks": 1,
+  "kartu_klarifikasi": 5,
+  "permintaan_dikumpulkan": 5,
+  "berkas_terindeks": 18,
+  "per_owner": {
+   "manager": 4,
+   "network-user": 7,
+   "dc-server": 1,
+   "cyber-security": 4,
+   "sap-basis": 2
+  }
+ },
+ "queue": [
+  {
+   "id": "KL-01",
+   "item": "A.8.13",
+   "judul_item": "Backup informasi",
+   "owner": "dc-server",
+   "pic_kontak": "c03 — Andi Pratama (Staf IT Data Center & Server, Jakarta, WIB)",
+   "task_pengumpul": "dc-server",
+   "butir_kurang": "Butir 2 (hasil uji restore dalam 12 bulan terakhir) — TIDAK ADA bukti dalam jendela 12 bulan; dan butir 3 (bukti enkripsi media backup di luar lokasi) — hanya enkripsi saat transfer.",
+   "pertanyaan": "Kepada PIC c03 (Andi Pratama, IT Data Center & Server) melalui task pengumpul dc-server: dokumen ev-a8-13-konfigurasi-backup.md menyatakan \"Uji restore terakhir: 14 AGUSTUS 2025 (14 bulan lalu)\" dan \"Uji restore berikutnya: BELUM DITENTUKAN (tidak ada jadwal tercatat)\". (a) Apakah di Data-Operation tersedia laporan uji restore SETELAH 14 Agustus 2025, atau dokumen penetapan jadwal uji restore? (b) Apakah tersedia bukti bahwa media backup yang disimpan offsite di fasilitas cabang Makassar dienkripsi saat disimpan (at rest) — dokumen saat ini hanya menyebut \"transfer terenkripsi\"?",
+   "bukti_terkait_di_indeks": [
+    "ev-a8-13-konfigurasi-backup.md"
+   ],
+   "status": "dijawab",
+   "jawaban_kartu": "Belum tersedia",
+   "conversation": "dashboard #approvals",
+   "kartu_outbox": "KLARIFIKASI-011",
+   "dijawab_pada": "2026-11-07T10:37:07+07:00"
+  },
+  {
+   "id": "KL-02",
+   "item": "A.5.15",
+   "judul_item": "Kontrol akses",
+   "owner": "network-user",
+   "pic_kontak": "c04 — Rina Kartika (Staf IT Network & User, Jakarta, WIB)",
+   "task_pengumpul": "network-user",
+   "butir_kurang": "Butir 3 (bukti peninjauan hak akses berkala / access review log 12 bulan terakhir) — hanya ringkasan naratif di dalam SOP, tidak ada rekaman review tersendiri; dan butir 1 (kebijakan kontrol akses yang disetujui manajemen) — kebijakan tersebar di tiga dokumen, hanya KSI v3.0 yang memuat bukti persetujuan.",
+   "pertanyaan": "Kepada PIC c04 (Rina Kartika, IT Network & User) melalui task pengumpul network-user: (a) SOP Pengelolaan Hak Akses v1.2 bagian \"Riwayat review terakhir tercatat\" menyebut review tahunan 20–24 Mei 2026 (12 akun dormant dinonaktifkan, 3 mutasi hak akses disesuaikan), tetapi tidak ada rekaman/log review tersendiri. Apakah rekaman hasil review — daftar akun yang ditinjau, keputusan, dan penanggung jawab — tersedia sebagai dokumen di Data-Operation? Perlu dicatat review kuartalan pertama (Q4 2026) yang diumumkan Pengumuman HR No. 112/2026 belum terlaksana per 7 November 2026. (b) Apakah kebijakan kontrol akses memiliki dokumen tersendiri yang disetujui manajemen beserta bukti persetujuannya? Saat ini hanya KSI v3.0 (disetujui CISO 5 Juni 2026) yang berstatus disetujui; SOP v1.2 (2024) tidak memuat baris persetujuan.",
+   "bukti_terkait_di_indeks": [
+    "ev-a5-01-kebijakan-ksi-v3.0.md",
+    "ev-a5-18-sop-access-control-v1.2-2024.md",
+    "ev-a5-15-matriks-akses.md",
+    "Definisi Peran RBAC Aplikasi HRIS v1.1.md",
+    "Daftar Akun Istimewa dan Pengelolaan PAM Sep 2026.csv",
+    "Pengumuman HR No.112-2026 Review Hak Akses Kuartalan 27 Okt 2026.md",
+    "Prosedur Pengamanan Kantor, Ruang, dan Fasilitas v1.2.md"
+   ],
+   "status": "dijawab",
+   "jawaban_kartu": "Belum tersedia",
+   "conversation": "dashboard #approvals",
+   "kartu_outbox": "KLARIFIKASI-012",
+   "dijawab_pada": "2026-11-07T10:37:16+07:00"
+  },
+  {
+   "id": "KL-03",
+   "item": "A.8.7",
+   "judul_item": "Proteksi terhadap malware",
+   "owner": "cyber-security",
+   "pic_kontak": "c02 — Fajar Hidayat (Staf IT Cyber Security, Makassar, WITA)",
+   "task_pengumpul": "cyber-security",
+   "butir_kurang": "Butir 3 (bukti integrasi proteksi dengan program awareness pengguna) — baru rencana, belum ada bukti pelaksanaan; butir 1 (cakupan EDR) — 4 aset tanpa EDR disebut \"pengecualian resmi\" tetapi daftar pengecualian tidak dilampirkan; butir 2 (detection log) — hanya ringkasan Q3 dan rekap tiket, tanpa log deteksi mentah.",
+   "pertanyaan": "Kepada PIC c02 (Fajar Hidayat, IT Cyber Security) melalui task pengumpul cyber-security: (a) ev-a8-07-config-malware.md menyatakan 4 VM uji belum tercover EDR dan \"tercatat pengecualian resmi\", namun daftar pengecualian tidak dilampirkan — apakah daftar aset pengecualian beserta justifikasi dan persetujuannya tersedia di Data-Operation? (b) Apakah log deteksi mentah EDR dapat diekspor dan tersedia sebagai dokumen, atau ringkasan Q3 2026 + Rekap Tiket Event adalah satu-satunya bentuk yang tersedia? (c) Apakah ada bukti pelaksanaan program awareness pengguna yang terkait malware (materi, daftar hadir, hasil simulasi) — simulasi phishing baru terjadwal November 2026 sehingga belum ada bukti pelaksanaan per 29 Oktober 2026?",
+   "bukti_terkait_di_indeks": [
+    "ev-a8-07-config-malware.md",
+    "Rekap Tiket Event dan Keputusan Klasifikasi Q3-2026.csv",
+    "Statistik Pelaporan Event 2026 Q1-Q3.csv",
+    "Post-Mortem dan Pembelajaran INC-2026-013.md"
+   ],
+   "status": "dijawab",
+   "jawaban_kartu": "Belum tersedia",
+   "conversation": "dashboard #approvals",
+   "kartu_outbox": "KLARIFIKASI-013",
+   "dijawab_pada": "2026-11-07T10:37:26+07:00"
+  },
+  {
+   "id": "KL-04",
+   "item": "A.8.15",
+   "judul_item": "Logging",
+   "owner": "sap-basis",
+   "pic_kontak": "c06 — Yoga Saputra (Staf SAP Basis, Jakarta, WIB)",
+   "task_pengumpul": "sap-basis",
+   "butir_kurang": "Butir 2 (contoh log sistem SAP/infrastruktur) — hanya log SIEM keamanan, tidak ada contoh log aplikasi/transaksi SAP; butir 1 (kebijakan logging termasuk level) — tidak ada skema level logging (DEBUG/INFO/WARN/ERROR) yang terdokumentasi, hanya field severity pada sampel; disertai konflik pemilik dokumen.",
+   "pertanyaan": "Kepada PIC c06 (Yoga Saputra, SAP Basis) melalui task pengumpul sap-basis: (a) ev-a8-15-kebijakan-logging.md memuat sampel log SIEM (auth.success, auth.failed, config.change, access.granted) tetapi tidak ada contoh log transaksi/aplikasi SAP; apakah contoh log aplikasi SAP (mis. log transaksi/audit SAP) tersedia di Data-Operation? (b) Apakah penetapan level logging (DEBUG/INFO/WARN/ERROR dan event mana pada level mana) terdokumentasi — dokumen saat ini hanya memuat field severity=medium pada satu alert? (c) Dokumen menyebut Owner \"Rina Kartika (IT Infrastructure)\" sedangkan PIC permintaan ini c06 (Yoga Saputra, SAP Basis); mohon konfirmasi siapa pemilik sah kebijakan logging agar temuan dialamatkan ke pemilik yang benar.",
+   "bukti_terkait_di_indeks": [
+    "ev-a8-15-kebijakan-logging.md",
+    "Standar Retensi dan Perlindungan Catatan v1.2.md"
+   ],
+   "status": "dijawab",
+   "jawaban_kartu": "Belum tersedia",
+   "conversation": "dashboard #approvals",
+   "kartu_outbox": "KLARIFIKASI-014",
+   "dijawab_pada": "2026-11-07T10:37:36+07:00"
+  },
+  {
+   "id": "KL-05",
+   "item": "Klausul 9.1",
+   "judul_item": "Pemantauan, pengukuran, analisis dan evaluasi",
+   "owner": "manager",
+   "pic_kontak": "c01 — Hendra Gunawan (Direksi / CISO, Jakarta, WIB)",
+   "task_pengumpul": "manager",
+   "butir_kurang": "Butir 1 (kebijakan/prosedur pemantauan-pengukuran-analisis-evaluasi beserta metrik ISMS) — tidak ada dokumen prosedur 9.1; metrik tersebar tanpa penetapan indikator/metode/frekuensi/pemilik; dan butir 3 (bukti tinjauan manajemen atas kinerja ISMS) — notulen komite bukan tinjauan manajemen 9.3 dengan masukan/keluaran.",
+   "pertanyaan": "Kepada PIC c01 (Hendra Gunawan, CISO) melalui task pengumpul manager: (a) Di indeks tidak ada dokumen prosedur \"Pemantauan, Pengukuran, Analisis, dan Evaluasi\" (Klausul 9.1); Kebijakan KSI v3.0 hanya menetapkan kerangka. Apakah dokumen penetapan indikator/metode/frekuensi/pemilik pengukuran kinerja ISMS tersedia di Data-Operation? (b) Notulen Rapat Komite Keamanan Informasi 15 September 2026 merupakan rapat komite; apakah ada bukti tinjauan manajemen (management review) atas kinerja ISMS dengan masukan dan keluaran sesuai Klausul 9.3 (mis. hasil audit internal, status tindakan korektif, umpan balik pemangku kepentingan, keputusan perbaikan)?",
+   "bukti_terkait_di_indeks": [
+    "Laporan Audit Internal ISMS Q1-2026.md",
+    "Laporan Review Kepatuhan Kebijakan Keamanan Q2-2026.md",
+    "Notulen Rapat Komite Keamanan Informasi 2026-09-15.md",
+    "Statistik Pelaporan Event 2026 Q1-Q3.csv"
+   ],
+   "status": "dijawab",
+   "jawaban_kartu": "Belum tersedia",
+   "conversation": "dashboard #approvals",
+   "kartu_outbox": "KLARIFIKASI-015",
+   "dijawab_pada": "2026-11-07T10:37:45+07:00"
+  }
+ ],
+ "catatan": "Jawaban kartu disalin dari record outbox pada turn 2026-11-07 ±10:45 WIB: kelimanya \"Belum tersedia\" (diputuskan manusia di dashboard 10:37 WIB). Sesuai SKILL §5, kontrol Annex A yang tetap tanpa bukti setelah klarifikasi dijawab \"Belum tersedia\" dinilai Minor NC; klausul wajib tanpa bukti dinilai sesuai §5."
+}

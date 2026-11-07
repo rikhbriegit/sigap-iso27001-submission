@@ -1,0 +1,9 @@
+Perangkat,Jadwal PM,Eksekusi Q3-2026,Pelaksana,Catatan,
+AC presisi ruang server JKT,Bulanan,24 Jul & 24 Okt,CV Sinar Teknik,Tepat jadwal
+UPS JKT (2 unit),6 bulanan,27 Okt,CV Sinar Teknik,Tepat jadwal (laporan terlampir A.7.11)
+Genset (gedung),Bulanan (oleh pengelola),Sep (laporan diterima 30 Sep),Pengelola gedung,Laporan diterima NDP
+Firewall fw-core-01,Tahunan (health hardware + pembersihan),Dijadwalkan Des 2026,IT Ops,Mengikuti window vendor
+Server fisik sap-prod-01,6 bulanan (debu, indikator),12 Sep,IT Ops,Tepat jadwal
+Kamera CCTV (33),Kuartalan (lens bersih, cek rekaman),Okt (Q4 awal),Facilities,Tepat jadwal
+Sistem deteksi kebakaran DC,Tahunan (vendor kalibrasi),Feb 2026 (berikutnya Feb 2027),Vendor kalibrasi,Tepat jadwal
+Status Q3-2026: 100% PM tepat jadwal (7/7 kategori)

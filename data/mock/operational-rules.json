@@ -1,0 +1,44 @@
+{
+  "company": "PT Nusantara Digital Pratama",
+  "effective": "November 2026 (v5.4: peserta WITA)",
+  "office_hours": [
+    {
+      "zone": "WIB",
+      "location": "Jakarta HQ",
+      "hours": "08:00–17:00",
+      "days": "Senin–Jumat"
+    },
+    {
+      "zone": "WITA",
+      "location": "Makassar (penugasan Staf IT Cyber Security, c02, Nov–Des 2026)",
+      "hours": "08:00–17:00",
+      "days": "Senin–Jumat"
+    }
+  ],
+  "meeting_rules": [
+    {
+      "rule": "TIDAK ada meeting/internal interview 11:30–13:00 hari Jumat waktu LOKAL tiap peserta (salat Jumat). Untuk peserta WITA (Makassar) ini = 10:30–12:00 WIB."
+    },
+    {
+      "rule": "Meeting hanya dalam jam kerja LOKAL tiap peserta (08:00–17:00) dan di luar istirahat 12:00–13:00 lokal; tampilkan slot dalam zona tiap peserta (WIB/WITA)."
+    },
+    {
+      "rule": "Usulan jadwal harus menghindari hari libur nasional."
+    }
+  ],
+  "public_holidays_around_assessment": [
+    {
+      "date": "2026-11-02",
+      "name": "Hari Raya Idul Maulid (perkiraan) — cek kalender resmi"
+    },
+    {
+      "date": "2026-12-25",
+      "name": "Hari Raya Natal"
+    },
+    {
+      "date": "2027-01-01",
+      "name": "Tahun Baru"
+    }
+  ],
+  "note_for_agent": "Saat menyusun usulan jadwal wawancara (FASE 3 workflow), WAJIB memvalidasi setiap slot terhadap aturan di atas. Jika usulan awal melanggar (mis. Jumat 11:45 WIB), geser otomatis ke slot aman berikutnya dan jelaskan alasannya ke user."
+}

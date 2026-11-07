@@ -1,0 +1,26 @@
+{
+ "enabled": true,
+ "lastTick": "2026-11-07T15:53:00+07:00",
+ "lastAction": null,
+ "lastError": "WorkBuddy tidak bisa dikendalikan dari dashboard: buka WorkBuddy lewat pintasan SIGAP (port debug 9333).",
+ "busy": false,
+ "panel": {
+  "lastCheck": 1794027226160,
+  "lastFix": null,
+  "fixes": 0,
+  "lastError": "WorkBuddy tidak bisa dikendalikan dari dashboard: buka WorkBuddy lewat pintasan SIGAP (port debug 9333).",
+  "busy": false
+ },
+ "lastPlan": {
+  "at": "2026-11-07T15:53:00+07:00",
+  "working": [],
+  "waiting": [],
+  "escalated": []
+ },
+ "manager": {
+  "busy": false,
+  "card": false,
+  "at": 1794027225159
+ },
+ "managerIdleSince": 1794027165509
+}

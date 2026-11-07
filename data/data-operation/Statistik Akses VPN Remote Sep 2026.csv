@@ -1,0 +1,6 @@
+Minggu,Rata-rata pengguna VPN aktif/hari,Puncak (akun),Kejadian diblokir MFA gagal berulang,Kejadian kredensial salah,
+M1 (1-7 Sep),63,78,1,2
+M2 (8-14 Sep),61,74,0,3
+M3 (15-21 Sep),66,83,1,1
+M4 (22-28 Sep),68,85,2,2
+Catatan: pemblokiran sementara otomatis (15 menit) lalu pulih setelah verifikasi; seluruh koneksi remote via vpn-gw-01 (log SIEM)

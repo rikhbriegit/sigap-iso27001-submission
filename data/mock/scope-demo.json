@@ -1,0 +1,111 @@
+{
+ "scope_name": "Kandidat fokus audit kesiapan sertifikasi — Demo Hackathon",
+ "period": "2026-11",
+ "assessor": "Auditor eksternal (c09, rikh.brie+assesor@gmail.com)",
+ "approver": "Manager IT (Rikh) menyetujui jadwal + fokus; laporan diterima Direksi/CISO (rikh.brie+direksi@gmail.com)",
+ "context": "Audit sertifikasi ISO 27001 fase 1 target awal Desember 2026. Scope: layanan TI (Data Center & Server, Network & User, Application Development, SAP Basis, SAP Functional, Cyber Security) kantor Jakarta.",
+ "in_scope_controls": [
+  {
+   "id": "A.5.1",
+   "title_id": "Kebijakan keamanan informasi",
+   "pic_kontak": "c05",
+   "task_pengumpul": "manager"
+  },
+  {
+   "id": "A.5.15",
+   "title_id": "Kontrol akses",
+   "pic_kontak": "c04",
+   "task_pengumpul": "network-user"
+  },
+  {
+   "id": "A.5.18",
+   "title_id": "Hak akses (review)",
+   "pic_kontak": "c04",
+   "task_pengumpul": "network-user"
+  },
+  {
+   "id": "A.5.23",
+   "title_id": "Keamanan layanan cloud",
+   "pic_kontak": "c05",
+   "task_pengumpul": "manager"
+  },
+  {
+   "id": "A.6.3",
+   "title_id": "Kesadaran, edukasi & pelatihan",
+   "pic_kontak": "c02",
+   "task_pengumpul": "cyber-security"
+  },
+  {
+   "id": "A.6.6",
+   "title_id": "Perjanjian kerahasiaan (NDA)",
+   "pic_kontak": "c05",
+   "task_pengumpul": "manager"
+  },
+  {
+   "id": "A.7.2",
+   "title_id": "Entri fisik",
+   "pic_kontak": "c03",
+   "task_pengumpul": "dc-server"
+  },
+  {
+   "id": "A.8.7",
+   "title_id": "Proteksi malware",
+   "pic_kontak": "c02",
+   "task_pengumpul": "cyber-security"
+  },
+  {
+   "id": "A.8.13",
+   "title_id": "Backup informasi",
+   "pic_kontak": "c03",
+   "task_pengumpul": "dc-server"
+  },
+  {
+   "id": "A.8.15",
+   "title_id": "Logging",
+   "pic_kontak": "c06",
+   "task_pengumpul": "sap-basis"
+  },
+  {
+   "id": "A.8.16",
+   "title_id": "Aktivitas pemantauan",
+   "pic_kontak": "c02",
+   "task_pengumpul": "cyber-security"
+  },
+  {
+   "id": "A.8.24",
+   "title_id": "Penggunaan kriptografi",
+   "pic_kontak": "c04",
+   "task_pengumpul": "network-user"
+  },
+  {
+   "id": "A.8.30",
+   "title_id": "Pengembangan yang dialihdayakan",
+   "pic_kontak": "c08",
+   "task_pengumpul": "manager"
+  }
+ ],
+ "deadline": "Laporan gap dibutuhkan CISO sebelum Jumat 6 November 2026 untuk review manajemen.",
+ "in_scope_controls_role": "Daftar KANDIDAT. Auditor memilih 3–5 item fokus berdasarkan risiko pada FASE 1; manager menyetujui di GATE 1.",
+ "kandidat_klausul": [
+  {
+   "id": "Klausul 9.1",
+   "title_id": "Pemantauan, pengukuran, analisis dan evaluasi",
+   "pic_kontak": "c01",
+   "task_pengumpul": "manager"
+  },
+  {
+   "id": "Klausul 9.2",
+   "title_id": "Audit internal",
+   "pic_kontak": "c01",
+   "task_pengumpul": "manager"
+  },
+  {
+   "id": "Klausul 9.3",
+   "title_id": "Tinjauan manajemen",
+   "pic_kontak": "c01",
+   "task_pengumpul": "manager"
+  }
+ ],
+ "out_of_scope_note": "Kontrol di luar fokus tercatat di SoA dengan kolom 'Dinilai siklus ini' = tidak.",
+ "catatan_pemilik": "pic_kontak = orang penanggung jawab kontrol (contacts.json; disebut di permintaan bukti dan temuan). task_pengumpul = task WorkBuddy yang mengumpulkan dokumen dari Data-Operation (staff-personas.json)."
+}

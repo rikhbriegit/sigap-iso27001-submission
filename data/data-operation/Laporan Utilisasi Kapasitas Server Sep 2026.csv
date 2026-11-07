@@ -1,0 +1,10 @@
+Server,Peran,CPU avg,CPU peak,RAM,Disk,Proyeksi penuh,Tindakan,
+portal-app-01,App portal,38%,71%,62%,48%,>24 bulan,-,
+portal-app-02,App portal,37%,68%,61%,48%,>24 bulan,-,
+portal-db-01,DB portal,52%,83%,70%,41%,18 bulan,Disk provisioning Q1 2027 (tiket CAP-011),
+sap-prod-01,SAP,61%,92%,74%,67%,12 bulan,Tambahan memori direncanakan Nov 2026 (tiket CAP-014),
+hris-prod-01,HRIS,33%,55%,48%,36%,>24 bulan,-,
+fs-01,File server,29%,60%,55%,58%,20 bulan,Pembersihan data usang terjadwal (retensi A.5.33),
+backup-srv-01,Backup,22%,45%,38%,82% (pra 27 Okt),- ,DITAMBAH +2TB per 27 Okt 2026 (CHG darurat retro-approved, lihat A.8.32) - kini 54%,
+siem-01,SIEM,48%,76%,69%,63%,16 bulan,Rotasi arsip WORM sesuai retensi 180 hari (A.8.15),
+Ambang peringatan kapasitas: 70% warning, 85% kritis (alarm ke NOC); laporan bulanan direview IT Ops

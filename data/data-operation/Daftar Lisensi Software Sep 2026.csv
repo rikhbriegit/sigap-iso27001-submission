@@ -1,0 +1,10 @@
+Software,Jenis lisensi,Jumlah,Periode berlaku,Catatan audit
+Microsoft 365 Business Premium,Lisensi langganan per user,214,per Maret 2027 (annual),Intune & sensitivity label aktif
+Windows Server Std,Server CAL+lisensi,14,perpetual + SA,Mutakhir
+Microsoft 365 E3 add-on (Intune),Termasuk paket,-,-,-
+EDR (komersial),Per endpoint,190,per Desember 2026,Lisensi = server+endpoint semua
+SAP,Enterprise agreement,1 sistem,per 31 Des 2026,Kontrak utama arsip Legal
+GitLab Community Edition,Open source (self-hosted),1 instance,Tanpa biaya,Dev internal (lihat A.8.4)
+Acrobat Pro,Langganan tim,12,per Nov 2026,Divisi legal & keuangan
+Alat pemantauan open source (Zabbix),Open source,1 instance,Tanpa biaya,Infra monitoring
+Hasil audit lisensi terakhir: 15 September 2026 - 0 temuan software tanpa lisensi (oleh IT Ops + Legal)

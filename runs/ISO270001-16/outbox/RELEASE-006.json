@@ -1,0 +1,52 @@
+{
+ "id": "RELEASE-006",
+ "kind": "release",
+ "title": "Rilis bukti Staff Network & User - A.5.15 Kontrol akses (ISO270001-16)",
+ "created": "2026-11-07T10:15:20+07:00",
+ "status": "EXECUTED",
+ "sha256": "18c3871f7604e6ba734396f8d1b77d14556ca793ca6dc247c96850de887e3db9",
+ "payload": {
+  "owner": "network-user",
+  "item": "A.5.15",
+  "sumber_folder": "G:/My Drive/Hackathon_Tencent/IT Operation/Network & User",
+  "tujuan_folder": "G:/My Drive/Hackathon_Tencent/ISO 27001/Evidence/ISO270001-16/network-user",
+  "files": [
+   "ev-a5-01-kebijakan-ksi-v3.0.md",
+   "ev-a5-18-sop-access-control-v1.2-2024.md",
+   "Prosedur Pengamanan Kantor, Ruang, dan Fasilitas v1.2.md",
+   "ev-a5-15-matriks-akses.md",
+   "Definisi Peran RBAC Aplikasi HRIS v1.1.md",
+   "Daftar Akun Istimewa dan Pengelolaan PAM Sep 2026.csv",
+   "Pengumuman HR No.112-2026 Review Hak Akses Kuartalan 27 Okt 2026.md"
+  ],
+  "sha256": {
+   "ev-a5-01-kebijakan-ksi-v3.0.md": "96ab6497bd092e5815c06babf325543ab2dce9425d908eb333e023ba6f65f3ad",
+   "ev-a5-18-sop-access-control-v1.2-2024.md": "0ea71cc21a53440cd9e2368ffeeb9bf5cb660891be52bc983e2b2c201d8c1335",
+   "Prosedur Pengamanan Kantor, Ruang, dan Fasilitas v1.2.md": "89e55b3cec1c7323e48c96191a14b995d543c211898e84700c4c98359a73ffc6",
+   "ev-a5-15-matriks-akses.md": "ad564720716aca8c5b20e9d3de7cf9e420814ac8d6b08334f5360b7477735f4d",
+   "Definisi Peran RBAC Aplikasi HRIS v1.1.md": "2a6fbb09986eafd6d4c04bd9d867503da9c1e7a1c468e8aa6a2881059b36fa62",
+   "Daftar Akun Istimewa dan Pengelolaan PAM Sep 2026.csv": "d8c6afc34ba5111f3eda2a26be66edf6d4a0e8dd12a643d84f4ca25e077d9802",
+   "Pengumuman HR No.112-2026 Review Hak Akses Kuartalan 27 Okt 2026.md": "5ea77278d2e7a0dd2b669307b0f8ec0d8023bfd95b0280d1e24af23eeb70de8d"
+  },
+  "catatan_kejujuran": "Semua berkas adalah salinan byte-identik dari Data-Operation (hash = simulation/data-operation-manifest.json); tidak ada dokumen yang dibuat atau diubah. Pemetaan butir: butir 1 (kebijakan kontrol akses fisik & logika yang disetujui manajemen) = KSI v3.0 (disetujui CISO 5 Jun 2026, prinsip least privilege/need-to-know) + SOP Pengelolaan Hak Akses v1.2 (logika) + Prosedur Pengamanan Kantor v1.2 (fisik); butir 2 (matriks hak akses per peran/sistem) = Matriks Hak Akses Okt 2026 + Definisi Peran RBAC HRIS v1.1 + Daftar Akun Istimewa/PAM Sep 2026; butir 3 (review berkala 12 bulan) = Pengumuman HR 112/2026 (kuartalan mulai 1 Nov 2026) + rekaman review 20-24 Mei 2026 di dalam SOP v1.2. KETERBATASAN YANG DILAPORKAN: (a) tidak ada satu dokumen kebijakan A.5.15 khusus - kebijakan tersebar pada 3 dokumen; (b) tidak ada log access review tersendiri (tanpa rekaman per akun/berita acara) - hanya ringkasan naratif review Mei 2026 di SOP, dan review kuartalan pertama Q4 2026 belum terlaksana per 7 Nov 2026, sehingga butir 3 terpenuhi sebagian; (c) konflik sumber: SOP v1.2 (2024) masih menyebut review tahunan sedangkan Pengumuman HR 27 Okt 2026 menetapkan kuartalan - sumber terbaru berlaku dan SOP v1.2 ditandai perlu diperbarui; (d) matriks akses adalah ekstrak 7 baris role, belum seluruh sistem.",
+  "options": [
+   "Revisi",
+   "Tolak",
+   "Tunda",
+   "Setujui sesuai preview"
+  ]
+ },
+ "history": [
+  {
+   "at": "2026-11-07T10:19:15+07:00",
+   "option": "Setujui sesuai preview",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  },
+  {
+   "at": "2026-11-07T10:19:17+07:00",
+   "executed": "dashboard: 7 file diindeks ke Evidence"
+  }
+ ],
+ "result": "dashboard: 7 file diindeks ke Evidence"
+}

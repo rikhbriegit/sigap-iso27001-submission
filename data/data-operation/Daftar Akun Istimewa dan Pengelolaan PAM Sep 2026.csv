@@ -1,0 +1,10 @@
+Akun admin,Peran,Pemilik manusia,Via bastion,MFA,Rotasi terakhir,Dipakai 90 hari terakhir,
+adm-hendra (CISO),Break-glass #1 (darurat),Hendra Gunawan,Ya,Ya,2026-08-15,Tidak pernah (segel),
+adm-rwiki,IT Security Officer (audit tools),Fajar Hidayat,Ya,Ya,2026-09-01,14x (sesi tercatat),
+adm-bsantoso,IT Ops (server & backup),Andi Pratama,Ya,Ya,2026-09-10,38x,
+adm-apratama,IT Infra (server, SIEM),Rina Kartika,Ya,Ya,2026-09-10,52x,
+adm-manggraini,Cloud admin (tenant console),Maya Anggraini,Ya,Ya,2026-08-28,9x,
+adm-bnugroho,Dev Lead (CI/CD pipeline - TANPA akses deploy prod),Bagus Nugroho,Ya,Ya,2026-09-02,11x,
+adm-hris (aplikasi),Admin teknis HRIS (tanpa akses data),Pemilik: Rina Kartika,Ya,Ya,2026-09-20,6x,
+adm-bastion #2,Break-glass #2 (darurat),Disegel CISO+IT Ops,Ya,Ya,2026-08-15,Tidak pernah (segel),
+Seluruh sesi admin terekam (session recording) & log masuk SIEM (lihat A.8.15)

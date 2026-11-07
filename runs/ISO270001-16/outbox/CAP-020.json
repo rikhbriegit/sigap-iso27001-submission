@@ -1,0 +1,100 @@
+{
+ "id": "CAP-020",
+ "kind": "cap",
+ "title": "Persetujuan CAP DRAFT v1.0 - 5 Minor NC (A.8.13, Klausul 9.1, A.8.7, A.5.15, A.8.15) - tenggat 2027-02-05",
+ "created": "2026-11-07T11:01:47+07:00",
+ "status": "EXECUTED",
+ "sha256": "119ede1e578814e047572907b1e5e6a3f1ebd113c5206163ca73fd83caa01f10",
+ "payload": {
+  "aksi": "setujui_cap",
+  "judul": "Persetujuan Rencana Tindakan Korektif (CAP) atas 5 Minor NC",
+  "pemilik": "Manager IT (auditee)",
+  "dasar_mandat": {
+   "item": "SERAH_TERIMA-019",
+   "status": "ANSWERED",
+   "keputusan": "Terima laporan dan susun CAP",
+   "waktu": "2026-11-07T10:59:28+07:00"
+  },
+  "sumber_temuan": {
+   "daftar_temuan": "reports/ISO270001-16/Daftar-Temuan-ISO270001-16.md",
+   "laporan_audit": "reports/ISO270001-16/Laporan-Audit-ISO270001-16.docx",
+   "catatan": "Status conformity dikutip apa adanya dari dokumen FINAL v1.0. Manager tidak menilai ulang dan tidak mengubah status. Akar masalah pada CAP ditandai sebagai hipotesis auditee yang wajib dikonfirmasi PIC."
+  },
+  "artefak": [
+   {
+    "file": "CAP-ISO270001-16.docx",
+    "lokasi": "reports/ISO270001-16/CAP-ISO270001-16.docx",
+    "versi": "DRAFT v1.0",
+    "versi_setelah_disetujui": "v1.0 final internal",
+    "sha256": "37e81e23a6e7bf630b7afd2c9d16a3a67946cf4122ff3a417810067d209185a3",
+    "ukuran_bytes": 11128
+   }
+  ],
+  "lingkup": [
+   {
+    "kontrol": "A.8.13",
+    "status_auditor": "Minor NC",
+    "prioritas_pengelolaan": "didahulukan",
+    "pic": "c03",
+    "tenggat": "2027-02-05"
+   },
+   {
+    "kontrol": "Klausul 9.1",
+    "status_auditor": "Minor NC",
+    "pic": "c01",
+    "tenggat": "2027-02-05",
+    "catatan": "tenggat tinjauan manajemen 9.3 pada daftar temuan (< akhir Q1 2027) melewati batas 90 hari; usulan interim 2027-01-29 menunggu persetujuan Auditor"
+   },
+   {
+    "kontrol": "A.8.7",
+    "status_auditor": "Minor NC",
+    "pic": "c02",
+    "tenggat": "2027-02-05"
+   },
+   {
+    "kontrol": "A.5.15",
+    "status_auditor": "Minor NC",
+    "pic": "c04",
+    "tenggat": "2027-02-05"
+   },
+   {
+    "kontrol": "A.8.15",
+    "status_auditor": "Minor NC",
+    "pic": "c06",
+    "tenggat": "2027-02-05"
+   }
+  ],
+  "tenggat_penutupan": "2027-02-05",
+  "tanggal_verifikasi_efektivitas": "2027-01-29",
+  "yang_disetujui": "Rencana tindakan korektif: hipotesis akar masalah, tindakan bertenggat, bukti objektif penerimaan, PIC, dan jadwal verifikasi efektivitas.",
+  "yang_TIDAK_disetujui": [
+   "Penutupan temuan. Penutupan hanya sah setelah Auditor memverifikasi bukti objektif pada FASE 8.",
+   "Perubahan status conformity. Kelima Minor NC tetap terbuka sampai verifikasi.",
+   "Penetapan tenggat tinjauan manajemen 9.3 yang melewati 90 hari - itu keputusan Auditor, bukan Manager."
+  ],
+  "keterbatasan_terkait": {
+   "klarifikasi": "KL-01..KL-05 dijawab manusia 'Belum tersedia' (7 November 2026 10:37 WIB), sehingga penilaian bergantung pada bukti yang ada.",
+   "lingkup": "Penilaian terbatas pada 5 item fokus, bukan 93 kontrol Annex A maupun seluruh klausul 4-10.",
+   "alat": "python-docx tidak terpasang; CAP dibangun lewat OOXML offline pada runs/ISO270001-16/.ref/build-cap.py. Deviasi diungkap."
+  },
+  "opsi_keputusan": [
+   "Setujui CAP DRAFT v1.0 sebagai v1.0 final internal",
+   "Kembalikan untuk revisi (akar masalah/tenggat/PIC/bukti penerimaan tidak realistis)",
+   "Tahan - belum disetujui, FASE 8 didahulukan"
+  ],
+  "catatan_kejujuran_uji": "RUN ini SIMULASI dengan perusahaan fiksi. Persetujuan diberikan operator atas nama persona simulasi dan manager; dokumen bukan bukti komitmen manajemen yang sesungguhnya."
+ },
+ "history": [
+  {
+   "at": "2026-11-07T11:03:14+07:00",
+   "option": "Setujui sesuai preview",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  },
+  {
+   "at": "2026-11-07T11:03:43+07:00",
+   "executed": "dashboard: disetujui 2026-11-07 11:03:14 atas sha256 37e81e23 CAP-ISO270001-16.docx; temuan TETAP terbuka menunggu verifikasi FASE 8"
+  }
+ ],
+ "result": "dashboard: disetujui 2026-11-07 11:03:14 atas sha256 37e81e23 CAP-ISO270001-16.docx; temuan TETAP terbuka menunggu verifikasi FASE 8"
+}

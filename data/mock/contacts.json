@@ -1,0 +1,113 @@
+{
+  "company": "PT Nusantara Digital Pratama",
+  "versi": "v5.4 — 7 Nov 2026: semua kontak bernama (keputusan user); hanya satu Budi (Budi Pratama, Keuangan, kontak non-auditee); pasangan Andi Pratama/Budi Pratama = ambiguitas 'Pak Pratama'; Staf Cyber Security bertugas di Makassar (WITA) 2 bulan; nama di Data-Operation diselaraskan (simulation/rename-people-v54.py)",
+  "contacts": [
+    {
+      "id": "c01",
+      "name": "Hendra Gunawan",
+      "role": "Direksi / CISO",
+      "dept": "Direksi",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie+direksi@gmail.com",
+      "note": "Penerima laporan hasil audit (Direksi/CISO). Approver kebijakan tingkat direksi."
+    },
+    {
+      "id": "c02",
+      "name": "Fajar Hidayat",
+      "role": "Staf IT Cyber Security",
+      "dept": "IT — Cyber Security",
+      "tz": "WITA",
+      "location": "Makassar (penugasan 2 bulan, Nov–Des 2026; kantor asal Jakarta)",
+      "email": "rikh.brie+cyber@gmail.com",
+      "task": "cyber-security",
+      "note": "PIC kontrol keamanan (malware, monitoring, awareness). Internal, bukan auditor. Sedang bertugas di Makassar selama 2 bulan: jam kerja dan salat Jumat mengikuti WITA."
+    },
+    {
+      "id": "c03",
+      "name": "Andi Pratama",
+      "role": "Staf IT Data Center & Server",
+      "dept": "IT — Data Center & Server",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie+datacenter@gmail.com",
+      "task": "dc-server",
+      "note": "PIC backup, server, ruang server (akses fisik)."
+    },
+    {
+      "id": "c04",
+      "name": "Rina Kartika",
+      "role": "Staf IT Network & User",
+      "dept": "IT — Network & User",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie+network@gmail.com",
+      "task": "network-user",
+      "note": "PIC jaringan, akun & hak akses pengguna, kriptografi jaringan."
+    },
+    {
+      "id": "c05",
+      "name": "Rikh",
+      "role": "IT Manager",
+      "dept": "IT",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie@gmail.com",
+      "task": "manager",
+      "note": "Manager IT internal: menyetujui jadwal/fokus/akses, pemilik CAP. Tidak pernah bertindak sebagai auditor."
+    },
+    {
+      "id": "c06",
+      "name": "Yoga Saputra",
+      "role": "Staf SAP Basis",
+      "dept": "IT — SAP Basis",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie+sapbasis@gmail.com",
+      "task": "sap-basis",
+      "note": "PIC logging & administrasi sistem SAP."
+    },
+    {
+      "id": "c07",
+      "name": "Maya Anggraini",
+      "role": "Staf SAP Functional",
+      "dept": "IT — SAP Functional",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie+sapfunc@gmail.com",
+      "task": "sap-func",
+      "note": "PIC konfigurasi & otorisasi fungsional SAP."
+    },
+    {
+      "id": "c08",
+      "name": "Bagus Nugroho",
+      "role": "Staf IT Application Development",
+      "dept": "IT — Application Development",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie+appdev@gmail.com",
+      "task": "appdev",
+      "note": "PIC pengembangan aplikasi & pengembangan oleh pihak ketiga."
+    },
+    {
+      "id": "c09",
+      "name": "Irwan Setiadi",
+      "role": "Auditor eksternal",
+      "dept": "Lembaga audit (eksternal)",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie+assesor@gmail.com",
+      "note": "Auditor EKSTERNAL: mengusulkan fokus & jadwal, menilai, QA, menerbitkan dan mengirim laporan."
+    },
+    {
+      "id": "c10",
+      "name": "Budi Pratama",
+      "role": "Staf Keuangan",
+      "dept": "Keuangan",
+      "tz": "WIB",
+      "location": "Jakarta",
+      "email": "rikh.brie+keuangan@gmail.com",
+      "note": "Kontak saja, BUKAN auditee: tidak punya task, tidak mengumpulkan bukti, di luar cakupan audit IT. Satu-satunya Budi di perusahaan."
+    }
+  ]
+}

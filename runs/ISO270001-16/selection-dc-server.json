@@ -1,0 +1,29 @@
+[
+ {
+  "file": "ev-a8-13-konfigurasi-backup.md",
+  "item": "A.8.13",
+  "butir": "1",
+  "reason": "Konfigurasi backup: jadwal harian otomatis 22:30 WIB (SAP DB, HRIS DB, file server, konfigurasi jaringan), retensi 30 hari harian + 12 bulan mingguan, salinan offsite mingguan ke Makassar. Menjawab butir 1 (jadwal, retensi, lokasi). Jenis full/incremental tidak dinyatakan eksplisit.",
+  "sha256": "db4d7c14e9c7ec3f3ba9694fae9d4c46ba706244ffe2ebc72f2f90d5909677cd",
+  "size": 999,
+  "at": "2026-11-07T03:19:14.980Z"
+ },
+ {
+  "file": "ev-a8-13-konfigurasi-backup.md",
+  "item": "A.8.13",
+  "butir": "2",
+  "reason": "Uji restore terakhir 14 Agustus 2025 (14 bulan lalu), hasil SAP DB dan file server berhasil dipulihkan ke lingkungan uji; berikutnya belum ditentukan. Menjawab butir 2 namun jujur menunjukkan uji tidak dalam 12 bulan terakhir (melanggar SOP minimal 2x per tahun).",
+  "sha256": "db4d7c14e9c7ec3f3ba9694fae9d4c46ba706244ffe2ebc72f2f90d5909677cd",
+  "size": 999,
+  "at": "2026-11-07T03:19:15.469Z"
+ },
+ {
+  "file": "ev-a8-13-konfigurasi-backup.md",
+  "item": "A.8.13",
+  "butir": "3",
+  "reason": "Salinan offsite mingguan ke Makassar via transfer terenkripsi (enkripsi tahap transport). Menjawab sebagian butir 3; enkripsi media backup at-rest saat off-site tidak disebutkan eksplisit dan tidak ada dokumen lain yang membuktikannya.",
+  "sha256": "db4d7c14e9c7ec3f3ba9694fae9d4c46ba706244ffe2ebc72f2f90d5909677cd",
+  "size": 999,
+  "at": "2026-11-07T03:19:15.812Z"
+ }
+]

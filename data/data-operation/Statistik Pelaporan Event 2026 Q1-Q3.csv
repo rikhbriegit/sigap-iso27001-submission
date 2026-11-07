@@ -1,0 +1,11 @@
+Bulan,Jumlah laporan dari karyawan,Jenis terbanyak,Rata-rata waktu lapor sejak kejadian,
+Jan,4,Email mencurigakan,3 jam
+Feb,6,Email mencurigakan,4 jam
+Mar,4,Perangkat hilang (2),2 jam
+Apr,7,Email mencurigakan,5 jam
+Mei,6,Email + lupa logout,4 jam
+Jun,5,Email mencurigakan,3 jam
+Jul,14,Email phishing gelombang,2 jam
+Ags,18,Email phishing gelombang,3 jam
+Sep,23,Email "invoice" + malware USB,1,5 jam
+Tren naik = kesadaran melapor meningkat (laporan lebih cepat); puncak Sept terkait INC-2026-013

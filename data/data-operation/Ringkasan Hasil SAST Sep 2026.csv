@@ -1,0 +1,7 @@
+Siklus (minggu),Merge request dipindai,Temuan total,Tinggi,Sedang,Rendah,Selesai diperbaiki,Blokir merge,
+M1,14,6,1,2,3,6,0 (semua diperbaiki sebelum merge),
+M2,12,4,0,1,3,4,0,
+M3,17,9,2,3,4,7,1 (MR ditunda - dependency rentan diperbaiki dulu),
+M4,13,5,0,2,3,5,0,
+Total September,56,24,3,8,13,22,1,
+Temuan tersisa per 28 Okt: 2 rendah terjadwal sprint berikut; 0 tinggi open

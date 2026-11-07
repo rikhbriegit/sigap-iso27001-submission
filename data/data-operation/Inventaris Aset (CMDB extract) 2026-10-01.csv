@@ -1,0 +1,15 @@
+ID Aset,Nama,Domain,Jenis,Owner,Lokasi,Klasifikasi,Keterangan
+AST-001,portal-app-01,Portal pelanggan,VM aplikasi,Andi Pratama,Tencent Cloud Jakarta,Rahasia,produksi
+AST-002,portal-app-02,Portal pelanggan,VM aplikasi,Andi Pratama,Tencent Cloud Jakarta,Rahasia,produksi
+AST-003,portal-db-01,Portal pelanggan,VM database,Rina Kartika,Tencent Cloud Jakarta,Rahasia,produksi
+AST-004,sap-prod-01,SAP,Server fisik,Andi Pratama,DC Jakarta,Sangat dibatasi,produksi
+AST-005,hris-prod-01,HRIS,VM server,Rina Kartika,DC Jakarta,Sangat dibatasi,produksi
+AST-006,eproc-app-01,e-proc,VM aplikasi,Rina Kartika,DC Jakarta,Rahasia,produksi
+AST-007,fs-01,File server internal,VM server,Andi Pratama,DC Jakarta,Internal,produksi
+AST-008,backup-srv-01,Backup,Server fisik,Andi Pratama,DC Jakarta,Rahasia,replikasi offsite Makassar
+AST-009,siem-01,SIEM & log repo,VM server,Rina Kartika,DC Jakarta,Sangat dibatasi,retensi 180 hari
+AST-010,fw-core-01,Perimeter,Firewall hardware,Andi Pratama,DC Jakarta,Internal,
+AST-011,bastion-01,Akses administratif,Bastion host,Rina Kartika,DC Jakarta,Sangat dibatasi,PAM
+AST-012,vpn-gw-01,Akses remote,VPN gateway,Andi Pratama,DC Jakarta,Rahasia,MFA wajib
+AST-013,gitlab-01,Repositori kode,VM self-hosted,Bagus Nugroho,DC Jakarta,Rahasia,dev internal
+AST-014,laptop fleet,Endpoint pengguna,Laptop 176 unit,Andi Pratama,Jakarta+Makassar,Internal,MDM+EDR

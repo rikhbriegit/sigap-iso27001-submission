@@ -1,0 +1,6 @@
+Transaksi,Maker,Checker,Verifikasi,Tanggal Contoh
+PO vendor PT Solusi Data Nusantara,Procurement Staff (A.W.),Procurement Manager (R.S.),Cocok dengan SOP,2026-08-19
+Posting JV rekonseiliasi Sept,Finance Analyst (D.K.),Finance Manager (P.H.),Cocok dengan SOP,2026-10-05
+Payroll September 2026,HR Payroll Staff (M.W.),HR Manager (Sari Dewi),Cocok dengan SOP,2026-09-28
+Deploy portal release 2.3,Dev (tim Bagus Nugroho),IT Ops (Andi Pratama),Deploy via pipeline oleh Ops,2026-09-02
+Pencabutan akses karyawan resign,IT Ops (Hendra K.),Disetujui HR (Sari Dewi),SLA 24 jam terpenuhi,2026-07-14

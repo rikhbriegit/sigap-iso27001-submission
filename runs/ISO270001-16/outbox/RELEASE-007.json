@@ -1,0 +1,34 @@
+{
+ "id": "RELEASE-007",
+ "kind": "release",
+ "title": "Rilis bukti A.8.13 - Data Center & Server (1 dokumen)",
+ "created": "2026-11-07T10:20:25+07:00",
+ "status": "EXECUTED",
+ "sha256": "d292ad8f59d35d25a0234aef70045617c267d3cc40a2cadd7709b5a3d47599bc",
+ "payload": {
+  "owner": "dc-server",
+  "item": "A.8.13",
+  "sumber_folder": "G:/My Drive/Hackathon_Tencent/IT Operation/Data Center & Server",
+  "tujuan_folder": "G:/My Drive/Hackathon_Tencent/ISO 27001/Evidence/ISO270001-16/dc-server",
+  "files": [
+   "ev-a8-13-konfigurasi-backup.md"
+  ],
+  "sha256": {
+   "ev-a8-13-konfigurasi-backup.md": "db4d7c14e9c7ec3f3ba9694fae9d4c46ba706244ffe2ebc72f2f90d5909677cd"
+  },
+  "catatan_kejujuran": "1 dokumen dari Data-Operation disalin byte-identik ke folder Data Center & Server untuk item A.8.13 (Backup informasi). Butir 1 (konfigurasi: jadwal, retensi, lokasi) dijawab ev-a8-13-konfigurasi-backup.md: backup harian otomatis 22:30 WIB (SAP DB, HRIS DB, file server, konfigurasi jaringan), retensi 30 hari harian + 12 bulan mingguan, salinan offsite mingguan ke Makassar. Catatan jujur: jenis backup (full/incremental/differential) tidak dinyatakan eksplisit. Butir 2 (uji restore dalam 12 bulan) dijawab dokumen sama: uji restore terakhir 14 Agustus 2025 (14 bulan lalu), berhasil pulihkan SAP DB dan file server ke lingkungan uji; berikutnya belum ditentukan. JUJUR: tidak memenuhi syarat 'dalam 12 bulan terakhir' dan melanggar SOP Backup v1.1 (minimal 2x/tahun) - ini gap. Butir 3 (enkripsi media backup off-site) dijawab sebagian: dokumen menyatakan salinan offsite via transfer terenkripsi (enkripsi tahap transport); enkripsi media backup pada saat di-rest (at-rest) di luar lokasi TIDAK disebutkan eksplisit dan tidak ada dokumen lain di Data-Operation yang membuktikannya - ini gap kedua. Semua kekurangan disajikan terbuka, tidak disembunyikan."
+ },
+ "history": [
+  {
+   "at": "2026-11-07T10:30:19+07:00",
+   "option": "Setujui sesuai preview",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  },
+  {
+   "at": "2026-11-07T10:30:19+07:00",
+   "executed": "dashboard: 1 file diindeks ke Evidence"
+  }
+ ],
+ "result": "dashboard: 1 file diindeks ke Evidence"
+}

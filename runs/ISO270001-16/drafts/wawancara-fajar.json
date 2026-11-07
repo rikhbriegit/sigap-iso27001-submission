@@ -1,0 +1,22 @@
+{
+  "to": [
+    "rikh.brie+cyber@gmail.com"
+  ],
+  "peserta": [
+    "rikh.brie+cyber@gmail.com",
+    "rikh.brie@gmail.com"
+  ],
+  "subject": "Undangan: Wawancara Singkat Konfirmasi Akar Masalah Temuan A.8.7 (ISO270001-16)",
+  "body": "Yth. Bapak Fajar Hidayat,\n\nDengan hormat, kami mengundang Bapak untuk wawancara singkat pada:\n\nHari/tanggal: Jumat, 13 November 2026\nWaktu: 14:45-15:15 WIB (15:45-16:15 WITA, waktu setempat Bapak di Makassar)\nDurasi: 30 menit\nAgenda: Konfirmasi akar masalah temuan audit A.8.7 (proteksi terhadap malware) sebagai dasar penyusunan rencana tindakan perbaikan.\nPeserta: Fajar Hidayat (IT Cyber Security), Rikh (Manager IT).\n\nWawancara ini merupakan bagian dari penyusunan rencana tindakan perbaikan internal, bukan pengumpulan bukti audit, dan tidak menilai kinerja. Mohon konfirmasi ketersediaan Bapak.\n\nTerima kasih.\n\nSalam,\nRikh\nManager IT",
+  "tanggal": "2026-11-13",
+  "waktu": "14:45-15:15 WIB",
+  "durasi_menit": 30,
+  "agenda": "Konfirmasi akar masalah A.8.7 untuk penyusunan rencana tindakan perbaikan",
+  "catatan": "Slot divalidasi schedule.js: 2026-11-13 14:45-15:15 WIB verdict OK untuk c05 (WIB) dan c02 (WITA 15:45-16:15). Usulan awal 'Jumat 10:45' ditolak karena bagi c02 di WITA menjadi 11:45-12:15 yang bertabrakan dengan salat Jumat 11:30-13:00 dan istirahat 12:00-13:00. Opsi 09:45-10:15 WIB (=10:45 WITA) juga ditolak karena bertumpang tindih 15 menit dengan rapat penutupan 09:00-10:00 yang wajib dihadiri Manager. Wawancara bersifat internal, bukan pengumpulan bukti audit (SOD: Manager adalah auditee).",
+  "options": [
+    "Revisi",
+    "Tolak",
+    "Tunda",
+    "Setujui sesuai preview"
+  ]
+}

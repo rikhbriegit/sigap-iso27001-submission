@@ -1,0 +1,8 @@
+Metrik,Jumlah,Persen,
+Laptop aktif terkelola MDM,176,100% dari target fleet,
+Enkripsi BitLocker AKTIF,173,98,3%,
+Pengecualian terdaftar (perangkat legacy tak dukung),3,1,7%,
+Agen EDR aktif di endpoint,176,100% endpoint (server terpisah, lihat A.8.7),
+Patch OS endpoint up-to-date (<=30 hari),171,97,2%,
+Kunci layar otomatis (policy MDM),176,100%,
+Catatan pengecualian: 3 unit scan gun gudang Makassar (Windows Embedded lama) - kompensasi: hanya aplikasi gudang, tanpa akses data Rahasia, terkunci fisik di cradle; rencana penggantian unit Q1 2027

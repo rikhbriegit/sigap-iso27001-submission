@@ -1,0 +1,12 @@
+{
+  "_catatan": "Cuplikan untuk digabungkan ke ~/.workbuddy-ai/mcp.json di bawah mcpServers (JANGAN menimpa server lain). Setelah ditulis, buka halaman konektor kustom dan klik Trust. Server hanya membaca config lokal; token tidak ditaruh di sini.",
+  "mcpServers": {
+    "sigap-discord": {
+      "command": "node",
+      "args": ["D:/Projects/hackathon_tencent/progress-dashboard/discord-mcp.js"],
+      "env": {
+        "SIGAP_DISCORD_STATE_DIR": "D:/Projects/hackathon_tencent/logs/discord"
+      }
+    }
+  }
+}

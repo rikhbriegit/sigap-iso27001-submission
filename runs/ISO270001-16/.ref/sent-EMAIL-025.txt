@@ -1,0 +1,20 @@
+Yth. Bapak Irwan Setiadi,
+
+Kami menyampaikan informasi yang baru kami temukan setelah laporan hasil audit FINAL v1.0 terbit dan didistribusikan. Dokumen ini belum pernah diserahkan dalam pengumpulan bukti.
+
+Dokumen: notulen rapat koordinasi IT, Rabu 4 November 2026.
+Status: salinan transkripsi tanpa berkas asli; tidak memuat jam, tempat, daftar hadir, notulis, dan pengesahan. Belum diverifikasi.
+
+Isi pokok:
+1. Backup harian dinyatakan berjalan normal; uji restore berikutnya dijadwalkan Desember 2026.
+2. Vendor EDR akan melakukan upgrade agent pada pekan 9-13 November 2026.
+3. Pelatihan awareness Q4 belum memiliki jadwal, PIC Fajar Hidayat.
+4. Rapat berikutnya 11 November 2026.
+
+Sikap kami: dokumen ini TIDAK kami ajukan sebagai bukti pemenuhan. Butir 1 dan 3 justru menunjukkan bahwa uji restore dan pelatihan awareness belum ada bukti pelaksanaannya, sejalan dengan temuan A.8.13 dan A.8.7. Pernyataan "backup harian berjalan normal" hanya menyatakan job berjalan, bukan kemampuan pemulihan.
+
+Kami tidak mengubah status temuan dan tidak menutup apa pun. Penilaian atas bobot dokumen ini, dampaknya terhadap laporan yang telah terbit dan didistribusikan, serta perlu tidaknya adendum, sepenuhnya kami serahkan kepada Bapak.
+
+Hormat kami,
+Rikh
+Manager IT

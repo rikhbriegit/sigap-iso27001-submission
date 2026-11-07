@@ -1,0 +1,6 @@
+Tanggal,Software diminta,Divisi,Keputusan,Alasan,
+2026-10-03,Alat desain grafis (lisensi tim),Marketing,DISETUJUI (dibeli lisensi tim 3 kursi),Lisensi resmi; dimasukkan katalog MDM,
+2026-10-07,Tool kompresi shareware,IT Ops,DITOLAK,Alternatif open source resmi tersedia di katalog,
+2026-10-09,Software survey online (installer pihak ketiga),HR,DITOLAK,Ada versi web tanpa instalasi; risiko bundling adware,
+2026-10-14,Plugin database GUI,IT Development,DISETUJUI (per akun dev, bukan di server),Digunakan hanya di laptop dev via katalog,
+2026-10-21,Updater driver dari situs vendor laptop,IT Ops,DISETUJUI (via sumber vendor resmi terverifikasi),Pengecualian 30 hari, tercatat,

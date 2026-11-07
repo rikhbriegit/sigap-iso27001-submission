@@ -1,0 +1,42 @@
+{
+ "id": "KLARIFIKASI-015",
+ "kind": "klarifikasi",
+ "title": "KLARIFIKASI KL-05 - Klausul 9.1 (manager): penetapan indikator ISMS & tinjauan manajemen 9.3",
+ "created": "2026-11-07T10:34:17+07:00",
+ "status": "ANSWERED",
+ "sha256": "19b423ad8c40d5c514fa2c9dff60d92c6586176766fddc9c397cced48107bfe3",
+ "payload": {
+  "run": "ISO270001-16",
+  "jenis": "klarifikasi bukti FASE 4 (SIGAP v5.2 §2 / §4)",
+  "id_klarifikasi": "KL-05",
+  "item": "Klausul 9.1",
+  "judul_item": "Pemantauan, pengukuran, analisis dan evaluasi",
+  "owner": "manager",
+  "pic_kontak": "c01 — Hendra Gunawan (Direksi / CISO, Jakarta, WIB)",
+  "task_pengumpul": "manager",
+  "butir_kurang": "Butir 1 (kebijakan/prosedur pemantauan-pengukuran-analisis-evaluasi beserta metrik ISMS) — tidak ada dokumen prosedur 9.1; metrik tersebar tanpa penetapan indikator/metode/frekuensi/pemilik; dan butir 3 (bukti tinjauan manajemen atas kinerja ISMS) — notulen komite bukan tinjauan manajemen 9.3 dengan masukan/keluaran.",
+  "pertanyaan": "Kepada PIC c01 (Hendra Gunawan, CISO) melalui task pengumpul manager: (a) Di indeks tidak ada dokumen prosedur \"Pemantauan, Pengukuran, Analisis, dan Evaluasi\" (Klausul 9.1); Kebijakan KSI v3.0 hanya menetapkan kerangka. Apakah dokumen penetapan indikator/metode/frekuensi/pemilik pengukuran kinerja ISMS tersedia di Data-Operation? (b) Notulen Rapat Komite Keamanan Informasi 15 September 2026 merupakan rapat komite; apakah ada bukti tinjauan manajemen (management review) atas kinerja ISMS dengan masukan dan keluaran sesuai Klausul 9.3 (mis. hasil audit internal, status tindakan korektif, umpan balik pemangku kepentingan, keputusan perbaikan)?",
+  "bukti_terkait_di_indeks": [
+   "Laporan Audit Internal ISMS Q1-2026.md",
+   "Laporan Review Kepatuhan Kebijakan Keamanan Q2-2026.md",
+   "Notulen Rapat Komite Keamanan Informasi 2026-09-15.md",
+   "Statistik Pelaporan Event 2026 Q1-Q3.csv"
+  ],
+  "options": [
+   "Dokumen tersedia di Data-Operation",
+   "Akan tersedia (tanggal)",
+   "Belum tersedia",
+   "Perlu diskusi"
+  ],
+  "catatan": "Keputusan diambil MANUSIA di dashboard http://127.0.0.1:4173/?run=ISO270001-16#approvals. Auditor DILARANG menjawab sendiri. Jawaban kartu disalin ke klarifikasi-bukti.json pada turn berikutnya sebagai jawaban_kartu + conversation = \"dashboard #approvals\" (state.js menolak status dijawab tanpa keduanya). Teks bebas bukan approval."
+ },
+ "history": [
+  {
+   "at": "2026-11-07T10:37:45+07:00",
+   "option": "Belum tersedia",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  }
+ ],
+ "answer": "Belum tersedia"
+}

@@ -1,0 +1,7 @@
+Pemasok,Layanan,Akses ke data NDP,Akses fisik,Skor terakhir,Tanggal asesmen,Syarat mitigasi aktif
+PT Solusi Data Nusantara,Hardware server & laptop,Tidak,Tidak (gudang sendiri),A,2026-03-04,-
+PT Jaring Andalan Indonesia,ISP primer,Tidak,Tidak,A,2025-11-12,-
+TelkomArea,Fiber & ISP sekunder,Tidak,Teknisi area terbatas,B,2026-04-22,Eskalasi teknisi wajib didampingi karyawan
+PT Siber Aman Nusantara,Jasa pentest,Terbatas (lingkungan uji),Tidak,A,2026-05-02,NDA tim pentest; akses hanya lingkungan uji
+CV Sinar Teknik,Maintenance AC/UPS ruang server,Tidak,Ya - area aman,B,2026-02-18,Prosedur tamu area aman (A.7.2/A.7.6)
+PT Mandiri Jaya,Pengadaan perangkat kerja,Tidak,Tidak,A,2026-06-09,-

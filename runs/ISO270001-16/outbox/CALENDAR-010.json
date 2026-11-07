@@ -1,0 +1,39 @@
+{
+ "id": "CALENDAR-010",
+ "kind": "calendar",
+ "title": "Undangan follow-up kickoff (Andi Pratama) - 13 Nov 13:00 WIB",
+ "created": "2026-11-07T10:30:32+07:00",
+ "status": "REVISION",
+ "sha256": "299421b0e3d26ca62ec53da593810fa30eb365a7ecb2cc0f085fbc7d709efed2",
+ "payload": {
+  "to": [
+   "rikh.brie+datacenter@gmail.com"
+  ],
+  "peserta": [
+   "rikh.brie+datacenter@gmail.com",
+   "rikh.brie@gmail.com"
+  ],
+  "subject": "Undangan: Follow-up Kickoff Audit ISO 27001 (ISO270001-16)",
+  "body": "Yth. Bapak Andi Pratama,\n\nDengan hormat, kami mengundang Bapak untuk rapat follow-up kickoff audit ISO 27001 (RUN ISO270001-16).\n\nHari/tanggal: Jumat, 13 November 2026\nWaktu: 13:00-13:30 WIB (30 menit)\nAgenda: Tindak lanjut kickoff audit & koordinasi bukti kontrol A.5.15 (kontrol akses).\nPeserta: Andi Pratama (IT Data Center & Server), Rikh (Manager IT).\n\nCatatan: slot 11:30-13:00 dihindari (istirahat), sehingga dijadwalkan 13:00 WIB. Undangan ini masih menunggu persetujuan di dashboard #approvals sebelum dikirim.\n\nTerima kasih.",
+  "tanggal": "2026-11-13",
+  "waktu": "13:00-13:30 WIB",
+  "durasi_menit": 30,
+  "agenda": "Tindak lanjut kickoff audit ISO 27001 & koordinasi bukti A.5.15",
+  "catatan": "Notulen kickoff BELUM ADA (kickoff 2026-11-10 09:00 WIB, belum berlangsung) sehingga tidak dilampirkan. Slot diverifikasi schedule.js: OK untuk c03/c05.",
+  "options": [
+   "Revisi",
+   "Tolak",
+   "Tunda",
+   "Setujui sesuai preview"
+  ]
+ },
+ "history": [
+  {
+   "at": "2026-11-07T10:31:41+07:00",
+   "option": "Revisi",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  }
+ ],
+ "answer": "Revisi"
+}

@@ -1,0 +1,62 @@
+{
+ "id": "SERAH_TERIMA-019",
+ "kind": "serah_terima",
+ "title": "Serah terima dokumen FINAL dari Auditor ke Manager (ISO270001-16)",
+ "created": "2026-11-07T10:56:56+07:00",
+ "status": "ANSWERED",
+ "sha256": "2907dd89673d8c8628c399760d24caf8966346dfbe28e58d871575b179799b90",
+ "payload": {
+  "run": "ISO270001-16",
+  "jenis": "serah_terima_laporan",
+  "dari": "Auditor ISO 27001 EKSTERNAL (melalui REPORT-018)",
+  "penerima": "Manager IT (internal)",
+  "artefak": [
+   {
+    "file": "SoA-ISO270001-16.xlsx",
+    "versi": "FINAL v1.0",
+    "sha256": "7892f0e0eb34061b0cf199422c1cddc2c92c04a43f6ce9e40c70ae06c26a5eec",
+    "bytes": 12095
+   },
+   {
+    "file": "Daftar-Temuan-ISO270001-16.md",
+    "versi": "FINAL v1.0",
+    "sha256": "93c3fef6f355639b36a9e21df428decc9a906ed6b1c26cdcf3cd056a889f9679",
+    "bytes": 10245
+   },
+   {
+    "file": "Laporan-Audit-ISO270001-16.docx",
+    "versi": "FINAL v1.0",
+    "sha256": "75c3fd4f185303f953736fb7ffc0e30494ca4369673db470c0922b0bf2f0acb6",
+    "bytes": 10527
+   },
+   {
+    "file": "Presentasi-Hasil-Audit-ISO270001-16.pptx",
+    "versi": "FINAL v1.0",
+    "sha256": "17b0fe666a4b2826f8bdf400402eba5e167d0caed59097c120f578cf7650e697",
+    "bytes": 29549
+   },
+   {
+    "file": "AuditLog-ISO270001-16.xlsx",
+    "versi": "FINAL v1.0",
+    "sha256": "beb1218c53e6e4ead0721d2dc3e1b4afc89172cdfce63a7c763839691d97ec95",
+    "bytes": 14666
+   }
+  ],
+  "ringkasan_conformity": "Conform 0, Minor NC 5, Major NC 0, OFI 0, N/A 0, menunggu klarifikasi 0. Tidak ada Major NC pada 5 item yang dinilai; lima Minor NC wajib ditutup via CAP <= 90 hari.",
+  "item_fokus": [],
+  "catatan": "Dokumen FINAL hasil REPORT-018 (sudah diterbitkan). Menerima berarti Manager menerima laporan dan menyusun CAP; distribusi ke Direksi/CISO baru boleh setelah ini.",
+  "options": [
+   "Minta klarifikasi auditor",
+   "Terima laporan dan susun CAP"
+  ]
+ },
+ "history": [
+  {
+   "at": "2026-11-07T10:59:28+07:00",
+   "option": "Terima laporan dan susun CAP",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  }
+ ],
+ "answer": "Terima laporan dan susun CAP"
+}

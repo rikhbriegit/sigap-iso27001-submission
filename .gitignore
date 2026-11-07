@@ -1,0 +1,7 @@
+node_modules/
+*.log
+progress-dashboard/progress.json
+progress-dashboard/discord-status.json
+progress-dashboard/discord.config.json
+.env
+__pycache__/

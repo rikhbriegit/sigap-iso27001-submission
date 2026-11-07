@@ -1,0 +1,6 @@
+Tanggal,Jam WIB,Pemohon (anonim),Kanal,Verifikasi Identitas,Hasil
+2026-10-02,09:41,NDP-2xx-121,Helpdesk,Telepon nomor kantor + pertanyaan personal,Berhasil (reset helpdesk)
+2026-10-08,14:15,NDP-2xx-044,Portal self-service,MFA aplikasi authenticator,Berhasil (self-service)
+2026-10-15,10:02,NDP-2xx-099,Helpdesk,Verifikasi GAGAL 2x (nomor tidak cocok),Ditolak - eskalasi ke atasan langsung
+2026-10-15,11:20,NDP-2xx-099,Helpdesk,Diverifikasi via atasan langsung secara tatap muka,Berhasil (reset helpdesk)
+2026-10-22,16:33,NDP-2xx-007,Portal self-service,MFA SMS terdaftar,Berhasil (self-service)

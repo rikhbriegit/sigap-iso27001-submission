@@ -1,0 +1,18 @@
+{
+  "name": "sigap-progress-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Progress bar live simulasi audit ISO 27001 (SIGAP) — halaman polling progress.json tiap 2 detik",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "watchdog": "node watchdog.js",
+    "ensure": "node ensure-dashboard.js",
+    "discord:status": "node discord-bridge.js status",
+    "discord:bridge": "node discord-bridge.js serve",
+    "discord:preview": "node discord-bridge.js preview",
+    "discord:approve": "node discord-bridge.js approve",
+    "discord:send": "node discord-bridge.js send",
+    "discord:test": "node ../tests/test-discord.js"
+  }
+}

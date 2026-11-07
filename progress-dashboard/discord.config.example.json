@@ -1,0 +1,47 @@
+{
+  "_catatan": [
+    "SALIN berkas ini menjadi discord.config.json (sudah di-.gitignore, JANGAN pernah di-commit).",
+    "Isi webhook.url dan/atau bot.token, lalu ubah mode: off -> preview -> live.",
+    "off = tidak ada koneksi keluar sama sekali; preview = boleh membuat PREVIEW KIRIM tetapi tidak pernah POST; live = POST hanya untuk item yang sudah disetujui dengan hash persis.",
+    "Setiap pesan keluar wajib PREVIEW KIRIM + persetujuan manusia yang terikat sha256 payload; tidak ada default, tidak ada auto-kirim, tidak ada auto-eksekusi pesan masuk.",
+    "Kredensial juga bisa lewat env SIGAP_DISCORD_WEBHOOK_URL / SIGAP_DISCORD_BOT_TOKEN agar tidak tersimpan di disk.",
+    "CARA DI DISCORD: Webhook = Server Settings > Integrations > Webhooks > Create Webhook > pilih channel > Copy Webhook URL.",
+    "CARA DI DISCORD: Bot = discord.com/developers/applications > New Application > Bot > Reset Token (token hanya tampil sekali) > nyalakan MESSAGE CONTENT INTENT > OAuth2 > URL Generator (scope bot) > invite ke server > salin Application ID / Client ID.",
+    "CARA DI DISCORD: Channel ID = User Settings > Advanced > nyalakan Developer Mode > klik kanan channel > Copy Channel ID. Isi ke bot.allowedChannelIds; Server ID ke bot.guildId.",
+    "bot.intents 33281 = GUILDS(1) + GUILD_MESSAGES(512) + MESSAGE_CONTENT(32768). MESSAGE_CONTENT adalah privileged intent: WAJIB dinyalakan di halaman Bot > Privileged Gateway Intents, kalau tidak Gateway menutup koneksi dengan close code 4014.",
+    "Override untuk uji lokal: SIGAP_DISCORD_API_BASE, SIGAP_DISCORD_GATEWAY_URL, SIGAP_DISCORD_STATE_DIR, SIGAP_DISCORD_STATUS_FILE, SIGAP_DISCORD_CONFIG."
+  ],
+  "mode": "off",
+  "webhook": {
+    "enabled": false,
+    "url": "",
+    "channelLabel": "sigap-audit",
+    "username": "SIGAP",
+    "events": ["gate_pending", "decision", "phase_change", "dashboard_down", "dashboard_up", "nc_major"]
+  },
+  "bot": {
+    "enabled": false,
+    "token": "",
+    "applicationId": "",
+    "guildId": "",
+    "allowedChannelIds": [],
+    "allowedUserIds": [],
+    "intents": 33281,
+    "gatewayUrl": "wss://gateway.discord.gg/?v=10&encoding=json"
+  },
+  "privacy": {
+    "maskPII": true,
+    "includeRawEvidence": false,
+    "maxContentChars": 1200
+  },
+  "approval": {
+    "requireExactHash": true,
+    "maxAgeMinutes": 15,
+    "actor": "dashboard (manusia)"
+  },
+  "transport": {
+    "timeoutMs": 8000,
+    "maxRetries": 2,
+    "allowNonDiscordHost": false
+  }
+}

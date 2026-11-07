@@ -1,0 +1,40 @@
+{
+ "aksi": "terbitkan_laporan_audit",
+ "versi_draft": "DRAFT v0.9",
+ "versi_final": "FINAL v1.0",
+ "lokasi": "reports/ISO270001-16/",
+ "sumber_draft": "runs/ISO270001-16/.ref/preview-draft/",
+ "sumber_final": "runs/ISO270001-16/.ref/preview-final/",
+ "artefak": [
+  {
+   "file": "SoA-ISO270001-16.xlsx",
+   "sha256_draft": "be2b9764cae7605e988cfb4fa1322d9e1bd2e0024355231d82c22ba0bf9168ae",
+   "sha256_final": "7892f0e0eb34061b0cf199422c1cddc2c92c04a43f6ce9e40c70ae06c26a5eec"
+  },
+  {
+   "file": "Daftar-Temuan-ISO270001-16.md",
+   "sha256_draft": "5998fbe0016d1eb5e4cd848ede6d380b7f379d48f9407ceb2476995223cbe140",
+   "sha256_final": "93c3fef6f355639b36a9e21df428decc9a906ed6b1c26cdcf3cd056a889f9679"
+  },
+  {
+   "file": "Laporan-Audit-ISO270001-16.docx",
+   "sha256_draft": "2bc9de930a8c343f7fd9b3f9e03444ec921f508bbe8e75428134df38f5a2fa03",
+   "sha256_final": "75c3fd4f185303f953736fb7ffc0e30494ca4369673db470c0922b0bf2f0acb6"
+  },
+  {
+   "file": "Presentasi-Hasil-Audit-ISO270001-16.pptx",
+   "sha256_draft": "815c28bbddb41bb28635336b6ec85b81558414c05ddf43f09be1e10a75211ed8",
+   "sha256_final": "17b0fe666a4b2826f8bdf400402eba5e167d0caed59097c120f578cf7650e697"
+  },
+  {
+   "file": "AuditLog-ISO270001-16.xlsx",
+   "sha256_draft": "dfd04198de94733175aa826aa43875d9e82e4545a855ebd38adcf9f160dd25b5",
+   "sha256_final": "beb1218c53e6e4ead0721d2dc3e1b4afc89172cdfce63a7c763839691d97ec95"
+  }
+ ],
+ "ringkasan_conformity": "Conform 0, Minor NC 5, Major NC 0, OFI 0, N/A 0, menunggu klarifikasi 0. Tidak ada Major NC pada 5 item yang dinilai; lima Minor NC wajib ditutup via CAP <= 90 hari.",
+ "catatan_klarifikasi": "KL-01..KL-05 dijawab manusia di dashboard #approvals 7 November 2026 10:37 WIB, seluruhnya 'Belum tersedia'; jawaban disalin ke klarifikasi-bukti.json, auditor tidak menjawab sendiri.",
+ "catatan_keterbatasan": "Pemeriksaan mutu FASE 6 LULUS pada iterasi pertama (0 sitasi di luar indeks, 0 istilah nilai/keparahan, 0 label status invalid). Keterbatasan substantif tetap dinyatakan terbuka: penilaian bergantung bukti yang ada setelah lima klarifikasi dijawab 'Belum tersedia'; lingkup 5 item, bukan 93 kontrol; bukti deteksi malware berbentuk agregat; klausul 9.3 di luar fokus meski celahnya teridentifikasi.",
+ "catatan_deviasi_alat": "python-docx dan python-pptx tidak terpasang serta konverter editor SDK loopback tidak dapat dipakai di sesi task; DOCX/PPTX dibangun offline via zipfile + OOXML stdlib. tools/, skills/, dan server dashboard tidak diubah (SKILL §0 aturan 14).",
+ "catatan_penerbitan": "Varian FINAL v1.0 sudah dibangun sebelum kartu ini diajukan. Setelah keputusan dashboard dan outbox.js verify lulus, finalisasi hanya MENYALIN berkas dari sumber_final ke lokasi tanpa menyunting byte, sehingga sha256_final tetap sama dengan yang disetujui. Serah terima ke Manager dan distribusi email adalah keputusan terpisah."
+}

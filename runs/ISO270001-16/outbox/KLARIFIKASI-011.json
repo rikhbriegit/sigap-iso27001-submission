@@ -1,0 +1,39 @@
+{
+ "id": "KLARIFIKASI-011",
+ "kind": "klarifikasi",
+ "title": "KLARIFIKASI KL-01 - A.8.13 Backup informasi (dc-server): uji restore 12 bulan & enkripsi media offsite",
+ "created": "2026-11-07T10:34:11+07:00",
+ "status": "ANSWERED",
+ "sha256": "ed6037bc2c3f43b058493e535cf776be3c8cc5b9f33c10307cf960b89f4a55ed",
+ "payload": {
+  "run": "ISO270001-16",
+  "jenis": "klarifikasi bukti FASE 4 (SIGAP v5.2 §2 / §4)",
+  "id_klarifikasi": "KL-01",
+  "item": "A.8.13",
+  "judul_item": "Backup informasi",
+  "owner": "dc-server",
+  "pic_kontak": "c03 — Andi Pratama (Staf IT Data Center & Server, Jakarta, WIB)",
+  "task_pengumpul": "dc-server",
+  "butir_kurang": "Butir 2 (hasil uji restore dalam 12 bulan terakhir) — TIDAK ADA bukti dalam jendela 12 bulan; dan butir 3 (bukti enkripsi media backup di luar lokasi) — hanya enkripsi saat transfer.",
+  "pertanyaan": "Kepada PIC c03 (Andi Pratama, IT Data Center & Server) melalui task pengumpul dc-server: dokumen ev-a8-13-konfigurasi-backup.md menyatakan \"Uji restore terakhir: 14 AGUSTUS 2025 (14 bulan lalu)\" dan \"Uji restore berikutnya: BELUM DITENTUKAN (tidak ada jadwal tercatat)\". (a) Apakah di Data-Operation tersedia laporan uji restore SETELAH 14 Agustus 2025, atau dokumen penetapan jadwal uji restore? (b) Apakah tersedia bukti bahwa media backup yang disimpan offsite di fasilitas cabang Makassar dienkripsi saat disimpan (at rest) — dokumen saat ini hanya menyebut \"transfer terenkripsi\"?",
+  "bukti_terkait_di_indeks": [
+   "ev-a8-13-konfigurasi-backup.md"
+  ],
+  "options": [
+   "Dokumen tersedia di Data-Operation",
+   "Akan tersedia (tanggal)",
+   "Belum tersedia",
+   "Perlu diskusi"
+  ],
+  "catatan": "Keputusan diambil MANUSIA di dashboard http://127.0.0.1:4173/?run=ISO270001-16#approvals. Auditor DILARANG menjawab sendiri. Jawaban kartu disalin ke klarifikasi-bukti.json pada turn berikutnya sebagai jawaban_kartu + conversation = \"dashboard #approvals\" (state.js menolak status dijawab tanpa keduanya). Teks bebas bukan approval."
+ },
+ "history": [
+  {
+   "at": "2026-11-07T10:37:07+07:00",
+   "option": "Belum tersedia",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  }
+ ],
+ "answer": "Belum tersedia"
+}

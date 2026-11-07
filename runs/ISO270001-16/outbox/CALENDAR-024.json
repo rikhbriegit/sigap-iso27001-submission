@@ -1,0 +1,44 @@
+{
+ "id": "CALENDAR-024",
+ "kind": "calendar",
+ "title": "Rapat penutupan audit ISO270001-16 - 13 Nov 2026 09:00-10:00 WIB (Direksi/CISO, Manager IT, Auditor)",
+ "created": "2026-11-07T11:13:23+07:00",
+ "status": "EXECUTED",
+ "sha256": "9d6ebea16dcbb89e759d8cd0896b279d6e0a47758f87bc3b0d17ab67923c674e",
+ "payload": {
+  "to": [
+   "rikh.brie+direksi@gmail.com"
+  ],
+  "peserta": [
+   "rikh.brie+direksi@gmail.com",
+   "rikh.brie@gmail.com",
+   "rikh.brie+assesor@gmail.com"
+  ],
+  "subject": "Undangan: Rapat Penutupan Audit Kesiapan ISO/IEC 27001:2022 (ISO270001-16)",
+  "body": "Yth. Bapak Hendra Gunawan (Direksi/CISO) dan Bapak Rikh (Manager IT),\n\nDengan hormat,\n\nSehubungan dengan telah diserahterimakannya laporan hasil audit kesiapan ISO/IEC 27001:2022 (FINAL v1.0) dan distribusinya kepada Direksi/CISO pada 7 November 2026, kami mengundang Bapak berdua untuk rapat penutupan audit pada:\n\nHari/tanggal: Jumat, 13 November 2026\nWaktu: 09:00-10:00 WIB\nDurasi: 60 menit\nAgenda:\n1. Konfirmasi hasil audit: 0 Conform, 5 Minor NC, 0 Major NC, 0 OFI, 0 N/A pada lima item fokus (A.5.15, A.8.13, A.8.7, A.8.15, Klausul 9.1).\n2. Pembahasan temuan dan tindakan korektif usulan untuk setiap Minor NC.\n3. Rencana tindakan korektif (CAP) milik Manager IT, tenggat paling lambat 5 Februari 2027 (90 hari).\n4. Penetapan mekanisme verifikasi tindakan korektif dan jadwal tindak lanjut.\n\nPeserta: Hendra Gunawan (Direksi/CISO), Rikh (Manager IT), Irwan Setiadi (Auditor ISO/IEC 27001 eksternal).\n\nCatatan: rapat ini adalah bagian dari simulasi SIGAP pada perusahaan fiksi PT Nusantara Digital Pratama. Mohon konfirmasi ketersediaan Bapak.\n\nTerima kasih.\n\nSalam,\nIrwan Setiadi\nAuditor ISO/IEC 27001 (eksternal)",
+  "tanggal": "2026-11-13",
+  "waktu": "09:00-10:00 WIB",
+  "durasi_menit": 60,
+  "agenda": "Rapat penutupan audit: konfirmasi hasil, pembahasan temuan dan tindakan korektif usulan, CAP Manager IT (tenggat 5 Februari 2027), mekanisme verifikasi tindak lanjut",
+  "catatan": "Slot divalidasi schedule.js: 2026-11-13 09:00-10:00 WIB verdict OK untuk c01 (WIB), c05 (WIB), c09 (WIB); tidak ada issue akhir pekan/jam kerja/istirahat/salat Jumat. Slot ini sama dengan yang telah diumumkan pada EMAIL-022 (distribusi laporan, terkirim gmail:1a1b435ad8dfe808). Catatan libur belum terverifikasi hanya 2026-11-02 (di luar tanggal rapat).",
+  "options": [
+   "Revisi",
+   "Tolak",
+   "Tunda",
+   "Setujui sesuai preview"
+  ]
+ },
+ "history": [
+  {
+   "at": "2026-11-07T11:14:15+07:00",
+   "option": "Setujui sesuai preview",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  },
+  {
+   "at": "2026-11-07T11:19:01+07:00",
+   "executed": "gmail:1a1b43b006b1398a"
+  }
+ ],
+ "result": "gmail:1a1b43b006b1398a"
+}

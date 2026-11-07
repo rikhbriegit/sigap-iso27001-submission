@@ -1,0 +1,47 @@
+[
+ {
+  "file": "ev-a8-07-config-malware.md",
+  "item": "A.8.7",
+  "butir": "1",
+  "reason": "Konfigurasi EDR/antivirus (butir 1): agent EDR 186/190 server+endpoint, update definisi otomatis 4x/hari, real-time on-access AKTIF, isolasi otomatis severity high/critical, scan menyeluruh terjadwal Sabtu 22:00 WIB (server) dan mingguan bergilir (endpoint)",
+  "sha256": "77f3eb3a83b8636e70a6db4685100b0e2919fb182c494fbd37c5361aee192959",
+  "size": 978,
+  "at": "2026-11-07T03:25:19.140Z"
+ },
+ {
+  "file": "ev-a8-07-config-malware.md",
+  "item": "A.8.7",
+  "butir": "2",
+  "reason": "Ringkasan deteksi malware Q3 2026 (butir 2): Juli 2 deteksi (1 false positive, 1 ditangani, resolusi <4 jam), Agustus 0, September 1 deteksi malware USB dengan endpoint terisolasi otomatis dan dibersihkan",
+  "sha256": "77f3eb3a83b8636e70a6db4685100b0e2919fb182c494fbd37c5361aee192959",
+  "size": 978,
+  "at": "2026-11-07T03:25:21.181Z"
+ },
+ {
+  "file": "Rekap Tiket Event dan Keputusan Klasifikasi Q3-2026.csv",
+  "item": "A.8.7",
+  "butir": "2",
+  "reason": "Rekap tiket event Q3 2026 (butir 2): catatan per-event bermuatan malware dengan keputusan klasifikasi, mis. TKT-2026-08-003 malware USB -> INSIDEN P3, endpoint terisolasi otomatis dan dibersihkan (rujuk A.8.7); TKT-2026-07-021 process mencurigakan -> EDR whitelist",
+  "sha256": "3865694270459e7e9887750d747f0353ded698d301b021dd3bf181f8ae7c738a",
+  "size": 1047,
+  "at": "2026-11-07T03:25:24.856Z"
+ },
+ {
+  "file": "Statistik Pelaporan Event 2026 Q1-Q3.csv",
+  "item": "A.8.7",
+  "butir": "3",
+  "reason": "Statistik pelaporan event Q1-Q3 2026 (butir 3): laporan karyawan naik Jan 4 -> Sep 23 dengan jenis terbanyak email mencurigakan/phishing dan malware USB, waktu lapor turun ke 1,5 jam; menunjukkan proteksi teknis terhubung dengan kesadaran dan pelaporan pengguna",
+  "sha256": "fe74ef197e4dc146f0adfce6ab93288c15dff38e75064d7e34f2b2775f6bcb56",
+  "size": 506,
+  "at": "2026-11-07T03:25:25.017Z"
+ },
+ {
+  "file": "Post-Mortem dan Pembelajaran INC-2026-013.md",
+  "item": "A.8.7",
+  "butir": "3",
+  "reason": "Post-mortem INC-2026-013 (butir 3): pembelajaran bahwa pelaporan cepat karyawan (3 laporan <10 menit) menghentikan eskalasi, dan rencana tindakan simulasi phishing seluruh karyawan bersama HR terjadwal November 2026 - integrasi proteksi dengan awareness, dengan GAP pelaksanaan belum ada per 29 Okt 2026",
+  "sha256": "048f2c3908b36545a737c1ba1207f8d5838285f631143ef2f68d3bd31d1120c3",
+  "size": 938,
+  "at": "2026-11-07T03:25:26.997Z"
+ }
+]

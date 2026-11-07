@@ -1,0 +1,50 @@
+{
+  "jenis": "cleanup_task_run",
+  "run": "ISO270001-16",
+  "metode": "Setelah kartu disetujui, definisi task dihapus satu per satu via automation_update mode delete dengan automation_id yang tercantum. TIDAK menyentuh automation di luar run ini (mis. '<automation lain milik pengguna>' dan '<task terjadwal Windows lain>'). Sebelum menghapus, automation_update list dipakai untuk memastikan id masih sama.",
+  "daftar_task": [
+    {
+      "nama": "ISO270001-16 Auditor",
+      "automation_id": "ffa11374-7ae9-4ac8-aa1c-7bea6f58d504",
+      "dibuat_fase": "FASE 1 (AUTOMATION-001)",
+      "status": "AKTIF - FASE 8 selesai (EMAIL-022 distribusi, CALENDAR-024 undangan rapat penutupan terkirim)",
+      "dihapus_setelah": "notulen rapat penutupan 13 Nov 2026 terbit"
+    },
+    {
+      "nama": "ISO270001-16 Staf IT Network & User",
+      "automation_id": "fcedd0aa-8da7-4101-8f69-5744563e36a2",
+      "dibuat_fase": "FASE 2 (GATE-004)",
+      "status": "SELESAI - RELEASE-006 EXECUTED (A.5.15)",
+      "dihapus_setelah": "boleh sekarang"
+    },
+    {
+      "nama": "ISO270001-16 Staf IT Data Center & Server",
+      "automation_id": "a0712218-31f8-48c8-84ef-c779a9f139e4",
+      "dibuat_fase": "FASE 2 (GATE-004)",
+      "status": "SELESAI - RELEASE-007 EXECUTED (A.8.13)",
+      "dihapus_setelah": "boleh sekarang"
+    },
+    {
+      "nama": "ISO270001-16 Staf IT Cyber Security",
+      "automation_id": "35415454-8778-4e34-a085-c747f936df15",
+      "dibuat_fase": "FASE 2 (GATE-004)",
+      "status": "SELESAI - RELEASE-008 EXECUTED (A.8.7)",
+      "dihapus_setelah": "boleh sekarang"
+    },
+    {
+      "nama": "ISO270001-16 Staf SAP Basis",
+      "automation_id": "0c0caaa1-f3f5-4d96-b7da-956e23141738",
+      "dibuat_fase": "FASE 2 (GATE-004)",
+      "status": "SELESAI - RELEASE-009 EXECUTED (A.8.15)",
+      "dihapus_setelah": "boleh sekarang"
+    }
+  ],
+  "peringatan_urutan": "JANGAN menghapus task Auditor sebelum notulen rapat penutupan 13 Nov 2026 09:00-10:00 WIB terbit. Rapat belum terjadi; notulen belum boleh dibuat (dan nanti harus berlabel SIMULASI). Menghapus lebih awal membuat FASE 8 tidak bisa diselesaikan. Empat task staf sudah selesai dan aman dihapus kapan saja.",
+  "catatan": "Menghapus definisi automation TIDAK menghapus conversation: tiap fire membuat conversation sendiri yang tetap ada di sidebar. Kalau conversation ikut dibersihkan, itu tindakan terpisah (soft-delete sessions.deleted_at) dan harus diputuskan sendiri, bukan bagian item ini. Jangan menyentuh automation '<automation lain milik pengguna>' maupun Windows Task Scheduler '<task terjadwal Windows lain>' - keduanya di luar run audit ini.",
+  "options": [
+    "Revisi",
+    "Tolak",
+    "Tunda",
+    "Setujui sesuai preview"
+  ]
+}

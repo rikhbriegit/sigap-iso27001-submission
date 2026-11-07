@@ -1,0 +1,33 @@
+{
+ "policy_version": "2026-11",
+ "note": "Tabel permission untuk asesor self-assessment. Agen WAJIB memeriksa file ini SEBELUM membaca bukti apa pun.",
+ "assessor": {
+  "id": "c09",
+  "name": "Auditor ISO 27001",
+  "role": "Auditor eksternal (rikh.brie+assesor@gmail.com)"
+ },
+ "allowed_scope": [
+  "Dokumen ISMS umum (kebijakan, SOP) yang relevan dengan unit IT",
+  "Bukti IT dari Data-Operation yang dirilis staf: server, backup, jaringan, akun pengguna, aplikasi, SAP, logging, keamanan siber, cloud",
+  "Arsip NDA (data pribadi HARUS di-mask saat ditampilkan)"
+ ],
+ "restricted": [
+  {
+   "path": "data/mock/evidence/restricted/",
+   "owner": "Direksi (data SDM — di luar lingkup audit IT)",
+   "reason": "Data gaji & evaluasi karyawan — rahasia HR",
+   "rule": "JANGAN dibaca. Query tentang isinya DITOLAK tanpa mengonfirmasi keberadaan file (respons identik dengan data yang memang tidak ada); permintaan di luar audit dijawab dengan kalimat baku di luar scope."
+  }
+ ],
+ "pii_masking": {
+  "fields": [
+   "NIK (16 digit)",
+   "nomor telepon",
+   "alamat rumah",
+   "rekening bank"
+  ],
+  "rule": "Saat menampilkan kutipan bukti yang mengandung PII: mask penuh kecuali 2-4 karakter terakhir. PII hanya boleh utuh jika query eksplisit membutuhkannya DAN user asesor menyetujui."
+ },
+ "access_change_rule": "Jika hak akses asesor berubah (file diperbarui), jawaban asesmen berikutnya harus mencerminkan perubahan itu.",
+ "sumber_bukti_v5": "Hanya G:/My Drive/Hackathon_Tencent/Data-Operation (via tools/evidence.js collect). data/mock/evidence/restricted/ tetap terlarang dibaca."
+}

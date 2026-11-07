@@ -1,0 +1,10 @@
+{
+ "note": "Urutan model cadangan Pengawas (boleh diubah user). Bila sebuah task atau chat Manager gagal karena model (penuh/ditolak/unknown error), Pengawas memakai model BERIKUTNYA di daftar ini yang tersedia di WorkBuddy (wb.models.list) dan mendukung tool. ID harus sama dengan WorkBuddy.",
+ "chain": [
+  "hy4free",
+  "hy3",
+  "custom-local:deepseek-v4.1-flash:cloud",
+  "glm-5.3-flash",
+  "deepseek-v4.1-flash-sg"
+ ]
+}

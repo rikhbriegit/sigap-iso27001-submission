@@ -1,0 +1,51 @@
+{
+ "run": "ISO270001-16",
+ "waktu": "2026-11-07T10:47:30+07:00",
+ "status": "FINAL",
+ "versi": "FINAL v1.0",
+ "status_label": "FINAL v1.0 - diterbitkan setelah kartu penerbitan disetujui dan outbox.js verify lulus; rujukan persetujuan dicatat pada status-penerbitan.json.",
+ "kontrol_soa": 93,
+ "bukti_terindeks": 18,
+ "temuan": 5,
+ "rekap": {
+  "Conform": 0,
+  "Minor NC": 5,
+  "Major NC": 0,
+  "OFI": 0,
+  "N/A": 0
+ },
+ "cap_target": "2027-02-05",
+ "entri_audit_diekspor": 51,
+ "entri_audit_terakhir": "599",
+ "slide": 11,
+ "pii_ter_mask": 0,
+ "artefak": [
+  {
+   "file": "SoA-ISO270001-16.xlsx",
+   "bytes": 12095,
+   "sha256": "7892f0e0eb34061b0cf199422c1cddc2c92c04a43f6ce9e40c70ae06c26a5eec"
+  },
+  {
+   "file": "Daftar-Temuan-ISO270001-16.md",
+   "bytes": 10245,
+   "sha256": "93c3fef6f355639b36a9e21df428decc9a906ed6b1c26cdcf3cd056a889f9679"
+  },
+  {
+   "file": "Laporan-Audit-ISO270001-16.docx",
+   "bytes": 10527,
+   "sha256": "75c3fd4f185303f953736fb7ffc0e30494ca4369673db470c0922b0bf2f0acb6"
+  },
+  {
+   "file": "Presentasi-Hasil-Audit-ISO270001-16.pptx",
+   "bytes": 29549,
+   "sha256": "17b0fe666a4b2826f8bdf400402eba5e167d0caed59097c120f578cf7650e697"
+  },
+  {
+   "file": "AuditLog-ISO270001-16.xlsx",
+   "bytes": 14666,
+   "sha256": "beb1218c53e6e4ead0721d2dc3e1b4afc89172cdfce63a7c763839691d97ec95"
+  }
+ ],
+ "deviasi": "python-docx/python-pptx tidak terpasang dan konverter editor SDK loopback tidak dapat dipakai di sesi task; DOCX/PPTX dibangun offline via zipfile + OOXML stdlib. tools/, skills/, dan server TIDAK diubah (SKILL §0 aturan 14).",
+ "keterbatasan_qa": "Pemeriksaan mutu FASE 6 LULUS pada iterasi pertama (exit 0): 0 sitasi di luar indeks, 0 istilah nilai/keparahan, 0 label status invalid. Keterbatasan substantif dimuat eksplisit di laporan bagian 7 dan deck."
+}

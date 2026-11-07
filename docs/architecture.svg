@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1280" height="760" fill="#0B1730"/>
+  <text x="40" y="44" fill="#EEF4FF" font-size="26" font-weight="700">SIGAP v5.4 — components and trust boundaries</text>
+  <text x="40" y="70" fill="#9DB2D1" font-size="15">Solid arrows = data/control flow · dashed boxes = trust boundaries · every outbound action passes the outbox</text>
+
+  <!-- B1 human -->
+  <rect x="30" y="100" width="230" height="600" rx="14" fill="none" stroke="#FBBF24" stroke-dasharray="7 6"/>
+  <text x="46" y="126" fill="#FBBF24" font-size="14" font-weight="700">B1 · HUMAN DECISIONS</text>
+  <rect x="50" y="150" width="190" height="90" rx="10" fill="#13264A"/>
+  <text x="62" y="176" fill="#EEF4FF" font-size="16" font-weight="700">IT Manager</text>
+  <text x="62" y="198" fill="#9DB2D1" font-size="13">types one sentence,</text>
+  <text x="62" y="216" fill="#9DB2D1" font-size="13">answers fixed-option cards</text>
+  <rect x="50" y="270" width="190" height="200" rx="10" fill="#1B3460" stroke="#7DD3FC"/>
+  <text x="62" y="296" fill="#7DD3FC" font-size="16" font-weight="700">SIGAP dashboard</text>
+  <text x="62" y="318" fill="#EEF4FF" font-size="13">in the chat's right panel</text>
+  <text x="62" y="342" fill="#9DB2D1" font-size="13">• exact payload + sha256</text>
+  <text x="62" y="362" fill="#9DB2D1" font-size="13">• plain-language checks</text>
+  <text x="62" y="382" fill="#9DB2D1" font-size="13">• unsafe options locked</text>
+  <text x="62" y="402" fill="#9DB2D1" font-size="13">• fixed reasons (Revisi/Tolak)</text>
+  <text x="62" y="422" fill="#9DB2D1" font-size="13">• live agent status +</text>
+  <text x="62" y="442" fill="#9DB2D1" font-size="13">  "Tindak lanjut" button</text>
+  <rect x="50" y="500" width="190" height="80" rx="10" fill="#13264A"/>
+  <text x="62" y="526" fill="#EEF4FF" font-size="16" font-weight="700">Board / CISO</text>
+  <text x="62" y="548" fill="#9DB2D1" font-size="13">receives the FINAL report</text>
+
+  <!-- B2 agents -->
+  <rect x="290" y="100" width="300" height="600" rx="14" fill="none" stroke="#2DD4BF" stroke-dasharray="7 6"/>
+  <text x="306" y="126" fill="#2DD4BF" font-size="14" font-weight="700">B2 · AGENTS (WorkBuddy, by role)</text>
+  <rect x="310" y="150" width="260" height="96" rx="10" fill="#13264A"/>
+  <text x="322" y="176" fill="#EEF4FF" font-size="16" font-weight="700">Manager chat (internal)</text>
+  <text x="322" y="198" fill="#9DB2D1" font-size="13">FASE 0 engagement, GATE 1,</text>
+  <text x="322" y="216" fill="#9DB2D1" font-size="13">own evidence, CAP · never a verdict</text>
+  <rect x="310" y="266" width="260" height="96" rx="10" fill="#13264A"/>
+  <text x="322" y="292" fill="#EEF4FF" font-size="16" font-weight="700">Auditor task (external)</text>
+  <text x="322" y="314" fill="#9DB2D1" font-size="13">focus + schedule, assessment, QA,</text>
+  <text x="322" y="332" fill="#9DB2D1" font-size="13">report, distribution · Gmail + Drive</text>
+  <rect x="310" y="382" width="260" height="96" rx="10" fill="#13264A"/>
+  <text x="322" y="408" fill="#EEF4FF" font-size="16" font-weight="700">Staff tasks ×4–6 (internal)</text>
+  <text x="322" y="430" fill="#9DB2D1" font-size="13">copy evidence from Data-Operation</text>
+  <text x="322" y="448" fill="#9DB2D1" font-size="13">Drive only · no Gmail</text>
+  <rect x="310" y="498" width="260" height="78" rx="10" fill="#1B3460"/>
+  <text x="322" y="524" fill="#EEF4FF" font-size="15" font-weight="700">skills/*.md (prompt rules)</text>
+  <text x="322" y="546" fill="#9DB2D1" font-size="13">roles, phases, cards, rules 0–14</text>
+
+  <!-- B3 server -->
+  <rect x="620" y="100" width="300" height="600" rx="14" fill="none" stroke="#C4B5FD" stroke-dasharray="7 6"/>
+  <text x="636" y="126" fill="#C4B5FD" font-size="14" font-weight="700">B3 · DASHBOARD SERVER (no AI)</text>
+  <rect x="640" y="150" width="260" height="110" rx="10" fill="#13264A"/>
+  <text x="652" y="176" fill="#EEF4FF" font-size="16" font-weight="700">Pengawas (supervisor)</text>
+  <text x="652" y="198" fill="#9DB2D1" font-size="13">every 60 s: read real task state,</text>
+  <text x="652" y="216" fill="#9DB2D1" font-size="13">re-run the SAME task (max 3/phase),</text>
+  <text x="652" y="234" fill="#9DB2D1" font-size="13">model fallback, then escalate</text>
+  <rect x="640" y="280" width="260" height="78" rx="10" fill="#13264A"/>
+  <text x="652" y="306" fill="#EEF4FF" font-size="16" font-weight="700">Panel guard</text>
+  <text x="652" y="328" fill="#9DB2D1" font-size="13">opens the dashboard in the panel</text>
+  <rect x="640" y="378" width="260" height="96" rx="10" fill="#13264A"/>
+  <text x="652" y="404" fill="#EEF4FF" font-size="16" font-weight="700">State → progress.json</text>
+  <text x="652" y="426" fill="#9DB2D1" font-size="13">phase/status computed from outbox,</text>
+  <text x="652" y="444" fill="#9DB2D1" font-size="13">evidence index, audit log</text>
+  <rect x="640" y="494" width="260" height="78" rx="10" fill="#13264A"/>
+  <text x="652" y="520" fill="#EEF4FF" font-size="16" font-weight="700">checks.js</text>
+  <text x="652" y="542" fill="#9DB2D1" font-size="13">automatic checks per decision card</text>
+
+  <!-- B4 tools + B5 data -->
+  <rect x="950" y="100" width="300" height="330" rx="14" fill="none" stroke="#7DD3FC" stroke-dasharray="7 6"/>
+  <text x="966" y="126" fill="#7DD3FC" font-size="14" font-weight="700">B4 · DETERMINISTIC TOOLS</text>
+  <rect x="970" y="150" width="260" height="122" rx="10" fill="#13264A"/>
+  <text x="982" y="176" fill="#EEF4FF" font-size="16" font-weight="700">outbox.js</text>
+  <text x="982" y="198" fill="#9DB2D1" font-size="13">decide → verify (sha256) → execute</text>
+  <text x="982" y="216" fill="#9DB2D1" font-size="13">→ done with proof (Gmail id);</text>
+  <text x="982" y="234" fill="#9DB2D1" font-size="13">refuses unknown addresses, duplicates,</text>
+  <text x="982" y="252" fill="#9DB2D1" font-size="13">stale schedules, free-text approvals</text>
+  <rect x="970" y="290" width="260" height="120" rx="10" fill="#13264A"/>
+  <text x="982" y="316" fill="#EEF4FF" font-size="16" font-weight="700">evidence.js · integrity.js · audit.js</text>
+  <text x="982" y="338" fill="#9DB2D1" font-size="13">byte-identical evidence only,</text>
+  <text x="982" y="356" fill="#9DB2D1" font-size="13">sealed records, hash-chained log,</text>
+  <text x="982" y="374" fill="#9DB2D1" font-size="13">no scores, citations inside the index</text>
+
+  <rect x="950" y="450" width="300" height="250" rx="14" fill="none" stroke="#4ADE80" stroke-dasharray="7 6"/>
+  <text x="966" y="476" fill="#4ADE80" font-size="14" font-weight="700">B5 · DATA + EXTERNAL</text>
+  <rect x="970" y="494" width="260" height="70" rx="10" fill="#13264A"/>
+  <text x="982" y="520" fill="#EEF4FF" font-size="15" font-weight="700">Data-Operation (read-only)</text>
+  <text x="982" y="542" fill="#9DB2D1" font-size="13">→ IT Operation/&lt;staff&gt; → Evidence</text>
+  <rect x="970" y="578" width="260" height="50" rx="10" fill="#13264A"/>
+  <text x="982" y="608" fill="#EEF4FF" font-size="15">runs/&lt;RUN&gt;/ state · audit log</text>
+  <rect x="970" y="640" width="260" height="46" rx="10" fill="#13264A"/>
+  <text x="982" y="668" fill="#EEF4FF" font-size="15">Gmail (only after approval)</text>
+
+  <!-- arrows -->
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9DB2D1"/></marker></defs>
+  <g stroke="#9DB2D1" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M240 195 H308"/>
+    <path d="M570 314 H638"/>
+    <path d="M638 350 H572"/>
+    <path d="M440 150 V 90 H 1100 V 148"/>
+    <path d="M900 533 H 935 V 230 H 968"/>
+    <path d="M1100 410 V 492"/>
+    <path d="M570 455 H 597 V 600 H 935 V 529 H 968"/>
+    <path d="M640 342 H 605 V 372 H 242"/>
+    <path d="M1100 686 C 900 740, 400 740, 240 560"/>
+  </g>
+  <text x="250" y="186" fill="#9DB2D1" font-size="12">trigger</text>
+  <text x="583" y="306" fill="#9DB2D1" font-size="11">read state</text>
+  <text x="574" y="347" fill="#9DB2D1" font-size="11">Run now</text>
+  <text x="620" y="84" fill="#9DB2D1" font-size="12">every outbound action = outbox item (sha256 + human decision)</text>
+  <text x="262" y="390" fill="#9DB2D1" font-size="11">cards + checks</text>
+  <text x="600" y="618" fill="#9DB2D1" font-size="12">evidence copies (byte-identical)</text>
+  <text x="560" y="734" fill="#9DB2D1" font-size="12">FINAL report by email, after handover</text>
+</svg>

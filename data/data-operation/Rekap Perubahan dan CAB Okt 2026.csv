@@ -1,0 +1,7 @@
+ID Perubahan,Ringkasan,Kategori,Keputusan,Pelaksanaan,Rollback tersedia,
+CHG-2026-1012,Patch bulanan server produksi batch 1,Standar,Pre-approved,Sabtu 4 Okt 00:00-04:00,Ya (snapshot),
+CHG-2026-1019,Rilis portal 2.4 (modul pembayaran),Normal - CAB 6 Okt,Disetujui,Minggu 20 Okt (malam),Ya (revert pipeline),
+CHG-2026-1024,Tambahan aturan blokir domain lookalike (pasca INC-2026-013 follow-up),Normal - CAB 13 Okt,Disetujui,13 Okt,Ya (export rule),
+CHG-2026-1042,PENAMBAHAN KAPASITAS STORAGE backup-srv-01 (+2TB),DARURAT (server hampir penuh 27 Okt),Approved lisan Andi Pratama & dilaporkan CISO retro 28 Okt,27 Okt pagi,Ya (disk lama tetap terpasang),
+CHG-2026-1044,Perbaikan interval health-check alarm (temuan uji failover),Normal - CAB 20 Okt,Disetujui,21 Okt,Ya,
+Catatan CAB Oktober: 5 perubahan (4 normal/standar + 1 darurat); darurat CHG-1042 di-retro-review sesuai SOP; 2 permintaan ditunda ke November (koordinasi window)

@@ -1,0 +1,37 @@
+{
+ "id": "EMAIL-021",
+ "kind": "email",
+ "title": "Ringkasan jadwal audit ISO 27001 ke Budi Pratama (c10, Keuangan)",
+ "created": "2026-11-07T11:06:09+07:00",
+ "status": "EXECUTED",
+ "sha256": "2068f05c438d50cf7f81ba921cf276710e0157a1ca4d5c0e49f0edc6d5890032",
+ "payload": {
+  "to": [
+   "rikh.brie+keuangan@gmail.com"
+  ],
+  "subject": "Ringkasan Jadwal Audit ISO/IEC 27001:2022 — PT Nusantara Digital Pratama",
+  "body": "Yth. Bapak Budi Pratama,\n\nDengan hormat, berikut ringkasan jadwal audit kesiapan ISO/IEC 27001:2022 di PT Nusantara Digital Pratama. Ringkasan ini kami sampaikan untuk keperluan perencanaan kegiatan Bapak; Bapak tidak termasuk peserta rapat.\n\nSelasa, 10 November 2026\n- 09:00-10:00 WIB: Kickoff audit (pembukaan dan penyelarasan ruang lingkup). Peserta: Auditor eksternal dan Manager IT.\n- 10:30-11:00 WIB: Koordinasi pengumpulan bukti bersama pemilik bukti dari Data Center & Server, Network & User, Cyber Security, dan SAP Basis. Peserta: Auditor eksternal, Manager IT, dan empat PIC bukti.\n\nKamis, 12 November 2026\n- 14:00-15:00 WIB: Rapat penilaian awal dan exit meeting bersama Auditor. Peserta: Auditor eksternal dan Manager IT.\n\nJumat, 13 November 2026\n- 09:00-10:00 WIB: Rapat penutupan bersama Direksi/CISO. Peserta: Auditor eksternal, Manager IT, dan Direksi/CISO.\n- 13:00-13:30 WIB: Tindak lanjut kickoff dan koordinasi bukti kontrol akses serta backup. Peserta: Manager IT, Andi Pratama, dan Rina Kartika.\n\nSeluruh waktu dalam WIB. Jadwal dapat menyesuaikan bila ada perubahan; kami akan mengabari Bapak bila ada pergeseran.\n\nTerima kasih.\n\nSalam,\nRikh\nManager IT",
+  "jenis": "pemberitahuan_jadwal",
+  "catatan": "Ad-hoc §6: 'Pak Budi' cocok tunggal ke c10 Budi Pratama (Staf Keuangan) — di luar cakupan audit, bukan auditee, tidak punya task. Karena itu isi dibatasi pada JADWAL saja: tanpa temuan, tanpa status conformity, tanpa daftar bukti, tanpa hasil penilaian. Jadwal dikutip dari proposal.json yang disetujui GATE 1 (4 agenda) + tindak lanjut 13 Nov 13:00 yang sudah terkirim ke peserta.",
+  "lampiran": [],
+  "options": [
+   "Revisi",
+   "Tolak",
+   "Tunda",
+   "Setujui sesuai preview"
+  ]
+ },
+ "history": [
+  {
+   "at": "2026-11-07T11:06:47+07:00",
+   "option": "Setujui sesuai preview",
+   "actor": "dashboard (manusia)",
+   "channel": "dashboard"
+  },
+  {
+   "at": "2026-11-07T11:07:55+07:00",
+   "executed": "gmail:1a1b430d897d58f6"
+  }
+ ],
+ "result": "gmail:1a1b430d897d58f6"
+}

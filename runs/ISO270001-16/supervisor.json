@@ -1,0 +1,148 @@
+{
+ "run": "ISO270001-16",
+ "workers": {
+  "ffa11374-7ae9-4ac8-aa1c-7bea6f58d504": {
+   "name": "ISO270001-16 Auditor",
+   "promptSha": "ac87713eb260166e0b38ce147c64c25058a85e3b62804dc45dd39ce94fb10d5c",
+   "attempts": {
+    "fase4": 2,
+    "fase5": 1,
+    "fase7": 2
+   },
+   "history": [
+    {
+     "at": "2026-11-07T10:32:19+07:00",
+     "scheduledAt": "2026-11-07T10:32:19+07:00",
+     "via": "auto",
+     "phase": "fase4",
+     "attempt": 1
+    },
+    {
+     "at": "2026-11-07T10:43:19+07:00",
+     "scheduledAt": "2026-11-07T10:43:19+07:00",
+     "via": "auto",
+     "phase": "fase4",
+     "attempt": 2
+    },
+    {
+     "at": "2026-11-07T10:56:20+07:00",
+     "scheduledAt": "2026-11-07T10:56:20+07:00",
+     "via": "auto",
+     "phase": "fase5",
+     "attempt": 1
+    },
+    {
+     "at": "2026-11-07T11:07:21+07:00",
+     "scheduledAt": "2026-11-07T11:07:21+07:00",
+     "via": "auto",
+     "phase": "fase7",
+     "attempt": 1
+    },
+    {
+     "at": "2026-11-07T11:12:20+07:00",
+     "scheduledAt": "2026-11-07T11:12:20+07:00",
+     "via": "auto",
+     "phase": "fase7",
+     "attempt": 2
+    }
+   ]
+  },
+  "fcedd0aa-8da7-4101-8f69-5744563e36a2": {
+   "name": "ISO270001-16 Staf IT Network & User",
+   "promptSha": "0b56ba56f30252a7ff441ca40970117f2f59aa45663df4888cb58673d6edbb85",
+   "attempts": {
+    "fase3": 1
+   },
+   "history": [
+    {
+     "at": "2026-11-07T10:13:16+07:00",
+     "scheduledAt": "2026-11-07T10:13:16+07:00",
+     "via": "auto",
+     "phase": "fase3",
+     "attempt": 1
+    }
+   ]
+  },
+  "a0712218-31f8-48c8-84ef-c779a9f139e4": {
+   "name": "ISO270001-16 Staf IT Data Center & Server",
+   "promptSha": "c3206bf0b3923ebb484772b5ed9ab8c4ecfe9e8503c931bd1dce4fd1b1544973",
+   "attempts": {},
+   "history": []
+  },
+  "35415454-8778-4e34-a085-c747f936df15": {
+   "name": "ISO270001-16 Staf IT Cyber Security",
+   "promptSha": "a2277d6fc0b40a69a60dc6c0f5a057a7c7d85d36ddab6d8cfdda5d6941442eb9",
+   "attempts": {
+    "fase3": 1
+   },
+   "history": [
+    {
+     "at": "2026-11-07T10:24:18+07:00",
+     "scheduledAt": "2026-11-07T10:24:18+07:00",
+     "via": "auto",
+     "phase": "fase3",
+     "attempt": 1
+    }
+   ]
+  },
+  "0c0caaa1-f3f5-4d96-b7da-956e23141738": {
+   "name": "ISO270001-16 Staf SAP Basis",
+   "promptSha": "426b349b3badbe8bf4b91f835d2ee57deea773b75d4e45f9a7a2436902191e9c",
+   "attempts": {},
+   "history": []
+  }
+ },
+ "ticks": 432,
+ "lastTick": "2026-11-07T15:53:00+07:00",
+ "manager": {
+  "attempts": {
+   "manager-fase2": 3,
+   "manager-fase3": 2,
+   "manager-fase4": 1,
+   "manager-fase8": 2
+  },
+  "history": [
+   {
+    "at": "2026-11-07T09:09:50+07:00",
+    "phase": "manager-fase2",
+    "attempt": 1
+   },
+   {
+    "at": "2026-11-07T09:21:19+07:00",
+    "phase": "manager-fase2",
+    "attempt": 2
+   },
+   {
+    "at": "2026-11-07T09:27:19+07:00",
+    "phase": "manager-fase2",
+    "attempt": 3
+   },
+   {
+    "at": "2026-11-07T10:11:20+07:00",
+    "phase": "manager-fase3",
+    "attempt": 1
+   },
+   {
+    "at": "2026-11-07T10:23:22+07:00",
+    "phase": "manager-fase3",
+    "attempt": 2
+   },
+   {
+    "at": "2026-11-07T10:38:21+07:00",
+    "phase": "manager-fase4",
+    "attempt": 1
+   },
+   {
+    "at": "2026-11-07T11:16:23+07:00",
+    "phase": "manager-fase8",
+    "attempt": 1
+   },
+   {
+    "at": "2026-11-07T11:26:23+07:00",
+    "phase": "manager-fase8",
+    "attempt": 2
+   }
+  ],
+  "lastWake": 1794025583300
+ }
+}

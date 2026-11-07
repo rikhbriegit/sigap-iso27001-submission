@@ -1,0 +1,38 @@
+[
+ {
+  "file": "Statistik Pelaporan Event 2026 Q1-Q3.csv",
+  "item": "Klausul 9.1",
+  "butir": "1",
+  "reason": "Metrik ISMS nyata: tren laporan insiden/event per bulan Jan-Sep 2026; bukti pemantauan & pengukuran menghasilkan metrik terukur.",
+  "sha256": "fe74ef197e4dc146f0adfce6ab93288c15dff38e75064d7e34f2b2775f6bcb56",
+  "size": 506,
+  "at": "2026-11-07T03:04:19.040Z"
+ },
+ {
+  "file": "Laporan Audit Internal ISMS Q1-2026.md",
+  "item": "Klausul 9.1",
+  "butir": "2",
+  "reason": "Hasil audit internal ISMS Q1-2026 (efektivitas, temuan minor/observasi) = bagian pemantauan/evaluasi periodik.",
+  "sha256": "d46eaca1aadef353bc6a35bf0949e262c11da33dea4f8685ee6e2ae110aab822",
+  "size": 978,
+  "at": "2026-11-07T03:04:19.326Z"
+ },
+ {
+  "file": "Laporan Review Kepatuhan Kebijakan Keamanan Q2-2026.md",
+  "item": "Klausul 9.1",
+  "butir": "2",
+  "reason": "Laporan hasil pengukuran/monitoring kepatuhan periodik dengan angka terukur (94-100%).",
+  "sha256": "8b71cb9a57cd4ed36bac24d492818c968c35b10179a56824ed017559b9d3fc1d",
+  "size": 961,
+  "at": "2026-11-07T03:04:19.726Z"
+ },
+ {
+  "file": "Notulen Rapat Komite Keamanan Informasi 2026-09-15.md",
+  "item": "Klausul 9.1",
+  "butir": "3",
+  "reason": "Tinjauan manajemen atas kinerja ISMS: komitmen, anggaran ISMS 2027, jadwal review komite.",
+  "sha256": "096c4f4554ba6362b99b775136b7b8ab1fff1a1b62dcf05464abbfa8323e5a92",
+  "size": 1135,
+  "at": "2026-11-07T03:04:20.054Z"
+ }
+]

@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIGAP — progress audit ISO 27001</title>
+<style>
+:root{--ink:#2C2C2A;--mut:#5F5E5A;--line:#D3D1C7;--bg:#F7F6F2;--card:#FFFFFF;
+--teal:#5DCAA5;--teal-d:#0F6E56;--teal-l:#E1F5EE;
+--ok:#3B6D11;--ok-l:#EAF3DE;--warn:#BA7517;--warn-l:#FAEEDA;
+--bad:#A32D2D;--bad-l:#FCEBEB;--coral:#993C1D;--coral-l:#FAECE7}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Segoe UI",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);font-size:13px;line-height:1.6;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px}
+h1{font-size:15px;font-weight:500}
+.chip{font-size:12px;padding:2px 10px;border-radius:999px;background:var(--teal-l);color:var(--teal-d);border:.5px solid var(--teal-d)}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--mut);margin-left:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--teal);display:inline-block}
+.card{background:var(--card);border:.5px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.name{font-weight:500;font-size:14px}
+.track{height:10px;background:#E9E7E0;border-radius:5px;overflow:hidden}
+.fill{height:100%;background:var(--teal);transition:width .6s;border-radius:5px}
+.big-pct{font-size:24px;font-weight:500}
+.ln{color:var(--mut);margin-top:4px}
+.ln b{color:var(--ink);font-weight:500}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.tag{font-size:12px;padding:2px 10px;border-radius:999px}
+.t-ok{background:var(--ok-l);color:var(--ok)}
+.t-warn{background:var(--warn-l);color:var(--warn)}
+.t-bad{background:var(--bad-l);color:var(--bad)}
+.t-coral{background:var(--coral-l);color:var(--coral)}
+.t-mut{background:#F1EFE8;color:#444441}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.mini{background:var(--bg);border:.5px solid var(--line);border-radius:10px;padding:10px 12px}
+.mini .name{font-size:13px}
+.mini .ln{font-size:12px}
+.mtrack{height:6px;background:#E9E7E0;border-radius:3px;overflow:hidden;margin:6px 0 4px}
+.mfill{height:100%;background:var(--teal);transition:width .6s}
+.log{font-family:ui-monospace,Consolas,monospace;font-size:12px;white-space:pre-wrap;color:#444441;line-height:1.7}
+.log b{color:var(--ink)}
+.ctl{border-bottom:.5px solid var(--line);padding:8px 0}
+.ctl:last-child{border-bottom:none}
+.foot{text-align:right;color:var(--mut);font-size:12px;margin-top:6px}
+.pill-id{font-size:12px;color:var(--mut)}
+.steps{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.step{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--mut);padding:4px 10px;border-radius:999px;background:#F1EFE8}
+.step .num{display:inline-flex;width:18px;height:18px;border-radius:50%;align-items:center;justify-content:center;background:#E3E1D9;font-size:11px}
+.step.done{color:var(--ok)}.step.done .num{background:var(--ok-l)}
+.step.now{color:#fff;background:var(--teal-d)}.step.now .num{background:#fff;color:var(--teal-d)}
+table.items{width:100%;border-collapse:collapse;font-size:12px}
+table.items th{text-align:left;color:var(--mut);font-weight:500;border-bottom:.5px solid var(--line);padding:6px 8px}
+table.items td{border-bottom:.5px solid #EEECE6;padding:7px 8px;vertical-align:top}
+details summary{cursor:pointer}
+.todo{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:.5px solid #EEECE6}
+.todo .what{flex:1}
+.actlog{max-height:460px;overflow:auto;padding-right:6px}
+details.act{border-bottom:.5px solid #EEECE6;padding:6px 0}
+details.act summary{display:flex;gap:10px;align-items:center;list-style:none}
+details.act summary::-webkit-details-marker{display:none}
+details.act .jam{font-family:ui-monospace,Consolas,monospace;color:var(--mut);width:42px}
+details.act .aksi{flex:1}
+details.act p{margin:6px 0 0 52px}
+details.act .full{font-size:12px;margin:6px 0 0 52px;padding-left:16px}
+details.act ul.full li{margin:2px 0}
+.btn{font-size:12px;padding:4px 10px;border-radius:8px;border:.5px solid var(--teal-d);background:var(--teal-l);color:var(--teal-d);cursor:pointer;text-decoration:none;white-space:nowrap}
+table.kv{width:100%;border-collapse:collapse;font-size:12px;margin:8px 0}
+table.kv th{width:190px;text-align:left;vertical-align:top;color:var(--mut);font-weight:500;padding:6px 8px;border-bottom:.5px solid #EEECE6}
+table.kv td{padding:6px 8px;border-bottom:.5px solid #EEECE6;vertical-align:top}
+table.kv.nested th{width:150px}
+table.pl{border-collapse:collapse;font-size:12px;width:100%}
+table.pl th{text-align:left;color:var(--mut);font-weight:500;padding:4px 6px;border-bottom:.5px solid var(--line)}
+table.pl td{padding:4px 6px;border-bottom:.5px solid #EEECE6}
+.payload code{font-family:ui-monospace,Consolas,monospace;font-size:11px;background:#F1EFE8;padding:1px 4px;border-radius:4px}
+.payload ul{margin:0;padding-left:18px}
+details.raw pre{max-height:300px;overflow:auto;border:.5px solid var(--line);border-radius:8px;padding:8px;margin:6px 0}
+nav.tabs{display:flex;gap:6px;margin:0 0 12px}
+nav.tabs a{font-size:13px;padding:6px 14px;border-radius:999px;border:.5px solid var(--line);background:#fff;color:var(--ink);text-decoration:none}
+nav.tabs a.on{background:var(--teal-d);color:#fff;border-color:var(--teal-d)}
+nav.tabs #tab-n{display:inline-block;min-width:18px;padding:0 6px;border-radius:999px;background:var(--warn);color:#fff;font-size:11px;text-align:center}
+nav.tabs #tab-n:empty{display:none}
+</style>
+</head>
+<body>
+<header>
+<h1>SIGAP — progress audit ISO 27001 <span class="pill-id" id="view-label"></span></h1>
+<div><span class="chip" id="fase">&hellip;</span><span class="live"><span class="dot"></span><span id="live">menyambungkan&hellip;</span></span></div>
+<span id="pend" class="chip" style="background:var(--warn-l);color:var(--warn);border-color:var(--warn)"></span></header>
+<nav class="tabs"><a href="#manager" id="tab-sum">Ringkasan</a><a href="#approvals" id="tab-dec">Keputusan <span id="tab-n"></span></a></nav>
+<div class="card" id="discord-card" style="display:none;padding:8px 14px;margin-bottom:10px"><span class="ln" id="discord-line">Discord: &hellip;</span></div>
+<main id="app"><div class="card">memuat &hellip;</div></main>
+<div class="foot" id="foot"></div>
+<script src="humanize.js"></script>
+<script src="approvals-view.js"></script>
+<script src="run-view.js"></script>
+<script>
+"use strict";
+var $ = function(s){ return document.querySelector(s); };
+function pct(a, b){ return Math.round(100 * a / b); }
+function bar(p, big){
+  return '<div class="' + (big ? "track" : "mtrack") + '"><div class="' + (big ? "fill" : "mfill") + '" style="width:' + p + '%"></div></div>';
+}
+function tag(t, cls){ return '<span class="tag ' + cls + '">' + t + "</span>"; }
+// v5: ISO 27001 conformity statuses only (no scores). Old v4 keys are mapped for archived runs.
+function statusTags(t){
+  var conform = t.conform != null ? t.conform : (t.compliant || 0);
+  var minor = t.minor_nc != null ? t.minor_nc : (t.partially || 0);
+  var major = t.major_nc != null ? t.major_nc : (t.non_compliant || 0);
+  var ofi = t.ofi || 0, na = t.na || 0;
+  var wait = t.menunggu_klarifikasi != null ? t.menunggu_klarifikasi : (t.bukti_tidak_cukup || 0);
+  return tag(conform + " Conform", "t-ok") + (minor ? tag(minor + " Minor NC", "t-warn") : "") +
+    (major ? tag(major + " Major NC", "t-bad") : "") + (ofi ? tag(ofi + " OFI", "t-mut") : "") +
+    (na ? tag(na + " N/A", "t-mut") : "") + (wait ? tag(wait + " menunggu klarifikasi", "t-coral") : "");
+}
+function waitingCards(d){
+  var w = d.menunggu_kartu || [];
+  if (!w.length) return "";
+  var s = '<div class="card"><div class="row"><span class="name">Menunggu kartu</span><span>' + w.length + "</span></div>";
+  for (var i = 0; i < w.length; i++){ s += '<p class="ln"><b>' + w[i].kartu + "</b> &middot; buka " + w[i].conversation + "</p>"; }
+  return s + "</div>";
+}
+
+function viewManager(d){
+  var p = pct(d.kontrol_selesai, d.kontrol_total);
+  var s = waitingCards(d) + '<div class="card">' +
+    '<div class="row"><span class="name">Penilaian item fokus</span><span class="big-pct">' + d.kontrol_selesai + "/" + d.kontrol_total + " &middot; " + p + "%</span></div>" +
+    bar(p, true) +
+    '<p class="ln">Sedang: <b>' + d.sedang.kontrol + "</b> &mdash; " + d.sedang.aktivitas + " (" + d.sedang.pic + ")</p>" +
+    '<div class="tags">' +
+    statusTags(d.temuan || {}) +
+    tag("QA: " + (d.qa.status === "belum" ? "belum mulai" : "iterasi " + d.qa.iterasi + "/" + d.qa.maks), "t-mut") +
+    "</div></div>" +
+    '<div class="card"><div class="row"><span class="name">Progres per task</span></div><div class="grid">';
+  for (var i = 0; i < d.staf.length; i++){
+    var st = d.staf[i];
+    var sp = st.bukti_total ? pct(st.bukti_diproses, st.bukti_total) : 0;
+    s += '<div class="mini"><div class="name">' + st.nama + "</div>" +
+      (st.bukti_total ? bar(sp) : "") +
+      '<p class="ln">Bukti: ' + st.bukti_diproses + "/" + st.bukti_total + " diproses" + (st.status ? " &middot; " + st.status : "") + "</p></div>";
+  }
+  s += '<div class="mini"><div class="name">Auditor ISO 27001 (eksternal)</div>' + bar(p) +
+    '<p class="ln">' + d.kontrol_selesai + "/" + d.kontrol_total + " kontrol dinilai" + (d.auditor_status || d.assessor_status ? " &middot; " + (d.auditor_status || d.assessor_status) : "") + (d.klarifikasi ? " &middot; Klarifikasi " + d.klarifikasi.dijawab + "/" + d.klarifikasi.total : "") + "</p></div>";
+  s += "</div></div>";
+  return s;
+}
+
+function viewStaf(d, id){
+  var st = null, i;
+  for (i = 0; i < d.staf.length; i++){ if (d.staf[i].id === id){ st = d.staf[i]; } }
+  if (!st){
+    return '<div class="card">Staf "' + id + '" tidak ditemukan. Id valid: dc-server, network-user, appdev, sap-func, sap-basis, cyber-security.</div>';
+  }
+  var p = pct(d.kontrol_selesai, d.kontrol_total);
+  var s = '<div class="card">' +
+    '<div class="row"><span class="name">' + st.nama + "</span><span>" + st.bukti_diproses + "/" + st.bukti_total + " bukti diproses</span></div>" +
+    bar(st.bukti_total ? pct(st.bukti_diproses, st.bukti_total) : 0, true) +
+    '<div class="tags">';
+  for (i = 0; i < (st.hasil || []).length; i++){
+    var h = st.hasil[i];
+    var cls = "t-mut";
+    if (/Major NC|Non-compliant/.test(h)){ cls = "t-bad"; }
+    else if (/Minor NC|Partially/.test(h)){ cls = "t-warn"; }
+    else if (/menunggu|tidak cukup/.test(h)){ cls = "t-coral"; }
+    else if (/Conform|Compliant/.test(h)){ cls = "t-ok"; }
+    s += tag(h, cls);
+  }
+  s += "</div></div>" +
+    '<div class="card"><div class="row"><span class="name">Penilaian keseluruhan</span><span>' + d.kontrol_selesai + "/" + d.kontrol_total + " &middot; " + p + "%</span></div>" +
+    bar(p, true) +
+    '<p class="ln">Sedang: <b>' + d.sedang.kontrol + "</b> &mdash; " + d.sedang.aktivitas + " (" + d.sedang.pic + ")</p></div>";
+  return s;
+}
+
+function viewAssessor(d){
+  var s = '<div class="card"><div class="row"><span class="name">Log penilaian &mdash; Auditor ISO 27001 (eksternal)</span><span>' + d.kontrol_selesai + "/" + d.kontrol_total + " kontrol</span></div>" +
+    '<p class="ln">Sedang: <b>' + d.sedang.kontrol + "</b> &mdash; " + d.sedang.aktivitas + " (" + d.sedang.pic + ")</p>" +
+    '<div class="log">';
+  for (var i = 0; i < (d.log_assessor || []).length; i++){
+    var e = d.log_assessor[i];
+    s += '<div class="ctl"><b>' + (e.kontrol ? "&ndash;&ndash; " + e.kontrol + " &ndash;&ndash;" : "") + "</b>" + String.fromCharCode(10) + e.teks + "</div>";
+  }
+  s += "</div></div>";
+  return s;
+}
+
+function route(d){
+  var h = location.hash || "#manager";
+  var label = "&middot; task manager";
+  var html;
+  if (h.indexOf("#staf/") === 0){
+    label = "&middot; task " + h.slice(6);
+    html = viewStaf(d, h.slice(6));
+  } else if (h === "#assessor" || h === "#auditor"){
+    label = "&middot; Auditor (eksternal)";
+    html = viewAssessor(d);
+  } else {
+    html = viewManager(d);
+  }
+  $("#view-label").innerHTML = label;
+  return html;
+}
+
+// --- #approvals: human decisions for outbox items (cards do not render in WorkBuddy task sessions) ---
+var APPROVE_LABELS = ["Revisi", "Tolak", "Tunda", "Setujui sesuai preview"];
+// R16-F3: fixed reasons for Revisi/Tolak (same list as server.js decide) — no free text, forwarded to the agent
+var REASONS = ["Isi atau agenda keliru", "Penerima atau peserta salah", "Tanggal atau jam salah", "Ada catatan internal di isi pesan", "Tidak sesuai permintaan saya", "Belum diperlukan sekarang", "Sesuai saran pemeriksaan otomatis"];
+function esc(t){ return String(t).replace(/[&<>]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c]; }); }
+// silent self-update: reload when dashboard code changes, but never while a decision is being prepared
+setInterval(function(){
+  fetch("/api/version", { cache: "no-store" }).then(function(r){ return r.json(); }).then(function(d){
+    if (!window.codeV) { window.codeV = d.v; return; }
+    if (d.v !== window.codeV) {
+      if (location.hash !== "#approvals") location.reload(); // never reload the decisions tab by itself
+    }
+  }).catch(function(){});
+}, 5000);
+function approvalsSig(items){ return items.map(function(x){ return x.id + ":" + x.sha256 + ":" + (x.blocked ? 1 : 0); }).join("|"); }
+setInterval(function(){
+  if (location.hash !== "#approvals") return;
+  fetch("/api/pending", { cache: "no-store" }).then(function(r){ return r.json(); }).then(function(items){
+    var n = document.getElementById("appr-note");
+    if (approvalsSig(items) !== window.apprSig) {
+      if (!n) { n = document.createElement("div"); n.id = "appr-note"; n.className = "card"; n.style.borderColor = "var(--warn)";
+        n.innerHTML = '<span class="ln">Ada perubahan pada daftar keputusan.</span> <button class="btn" id="appr-reload">Perbarui daftar</button>';
+        var app = document.getElementById("app"); app.insertBefore(n, app.firstChild);
+        document.getElementById("appr-reload").onclick = function(){ loadApprovals(); }; }
+    } else if (n) { n.remove(); }
+  }).catch(function(){});
+}, 5000);
+function loadApprovals(){
+  $("#view-label").innerHTML = "&middot; keputusan (approval)"; $("#live").textContent = "live"; $("#fase").textContent = "Keputusan";
+  fetch("/api/pending", { cache: "no-store" }).then(function(r){ return r.json(); }).then(function(items){
+    window.apprSig = approvalsSig(items);
+    if (!items.length){
+      $("#app").innerHTML = '<div class="card"><p>Tidak ada keputusan yang menunggu.</p><p class="ln">Kembali ke ringkasan dalam 3 detik…</p><p><a class="btn" href="#manager">&larr; Kembali ke ringkasan</a></p></div>';
+      clearTimeout(window.backT); window.backT = setTimeout(function(){ if (location.hash === "#approvals") location.hash = "#manager"; }, 3000);
+      return;
+    }
+    // automatic checks in plain language: the person never has to compare hashes or know how to fix things
+    function checkBox(ck){
+      if (!ck || !(ck.checks || []).length && !ck.advice) return "";
+      var bad = (ck.checks || []).some(function(x){ return !x.ok; });
+      var h = '<div class="card" style="margin:8px 0;padding:10px 12px;border-left:4px solid ' + (bad ? 'var(--bad)' : 'var(--ok, #2e9d6b)') + '">' +
+        '<p class="ln" style="margin:0 0 6px"><b>Pemeriksaan otomatis</b> — ' + (bad ? 'ada yang belum sesuai' : 'semua sesuai') + '</p><ul style="margin:0 0 6px 18px;padding:0">';
+      (ck.checks || []).forEach(function(x){ h += '<li class="ln" style="list-style:none;margin-left:-18px">' + (x.ok ? '✅ ' : '❌ ') + esc(x.text) + '</li>'; });
+      h += '</ul>';
+      if (ck.advice) h += '<p class="ln" style="margin:4px 0">' + (ck.advice.option ? '<b>Saran: pilih “' + esc(ck.advice.option) + '”.</b> ' : '') + esc(ck.advice.why || '') + '</p>' +
+        (ck.advice.next ? '<p class="ln" style="margin:0">Selanjutnya: ' + esc(ck.advice.next) + '</p>' : '');
+      if ((ck.locked || []).length) h += '<p class="ln" style="margin:4px 0 0;color:var(--bad)">Dikunci sampai pemeriksaan lulus: ' + ck.locked.map(esc).join(', ') + '</p>';
+      return h + '</div>';
+    }
+    var s = "";
+    items.forEach(function(it, i){
+      var opts = Array.isArray(it.payload.options) ? it.payload.options : APPROVE_LABELS;
+      s += '<div class="card" id="it' + i + '"><div class="row"><span class="name">' + esc(it.id) + " &middot; " + esc(it.title || it.kind) + '</span><span class="tag t-mut">' + esc(it.run) + "</span></div>" +
+        '<p class="ln">Kode verifikasi isi: <code title="' + esc(it.sha256) + '">' + esc(it.sha256.slice(0, 12)) + "…</code> (berubah bila isi diubah)</p>" +
+        '<div class="payload">' + window.renderPayload(it.payload, it.run) + "</div>" +
+        (it.blocked ? '<p class="ln" style="color:var(--bad)"><b>Belum bisa disetujui:</b> ' + esc(it.blocked) + '</p>' : '') +
+        checkBox(it.check) +
+        '<label class="ln"><input type="checkbox" id="rd' + i + '"> Saya sudah membaca payload persis di atas</label>' +
+        '<p class="ln" style="margin:6px 0">Alasan bila memilih Revisi / Tolak: <select id="why' + i + '" style="font:inherit;padding:2px 6px"><option value="">— pilih alasan —</option>' +
+        REASONS.map(function(x){ return '<option>' + esc(x) + '</option>'; }).join("") + '</select></p><div class="tags">';
+      opts.forEach(function(o){ var dis = (it.blocked && o === "Setujui sesuai preview") || ((it.check && it.check.locked) || []).indexOf(o) >= 0; s += '<button class="tag t-mut" style="border:.5px solid var(--line);cursor:' + (dis ? 'not-allowed;opacity:.45' : 'pointer') + '"' + (dis ? ' disabled' : '') + ' data-i="' + i + '" data-o="' + esc(o) + '">' + esc(o) + "</button>"; });
+      s += '</div><p class="ln" id="res' + i + '"></p></div>';
+    });
+    $("#app").innerHTML = s;
+    [].forEach.call(document.querySelectorAll("button[data-i]"), function(b){
+      b.onclick = function(){
+        var i = Number(b.getAttribute("data-i")), o = b.getAttribute("data-o"), it = items[i];
+        var executes = !Array.isArray(it.payload.options) ? (o === "Setujui sesuai preview") : true;
+        if (executes && !document.getElementById("rd" + i).checked){ document.getElementById("res" + i).textContent = "Centang dulu: sudah membaca payload."; return; }
+        var why = (document.getElementById("why" + i) || {}).value || "";
+        if ((o === "Revisi" || o === "Tolak") && !why){ document.getElementById("res" + i).textContent = "Pilih dulu alasannya (daftar di atas tombol) — alasan ini diteruskan ke agen."; return; }
+        fetch("/api/decide", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ run: it.run, id: it.id, sha: it.sha256, option: o, reason: (o === "Revisi" || o === "Tolak") ? why : "" }) })
+          .then(function(r){ return r.json(); }).then(function(r){ var res = document.getElementById("res" + i);
+          if (r.ok) {
+            var card = document.getElementById("it" + i);
+            card.innerHTML = '<div class="row"><span class="name">' + esc(it.id) + ' &middot; ' + esc(it.title || it.kind) + '</span></div><p><span class="tag t-ok">Tercatat: ' + esc(H.status(r.status || "")) + '</span> ' + esc(o) + '</p><p class="ln">' + esc(H.text(String(r.out || "")).slice(0, 300)) + '</p><p><a class="btn" href="#manager">&larr; Kembali ke ringkasan</a></p>';
+            window.decided = window.decided || {}; window.decided[it.id] = true;
+          } else {
+            res.innerHTML = "<b>Gagal:</b> " + esc(String(r.out || "").slice(0, 300)); // keep the page as it is
+          } });
+      };
+    });
+  }).catch(function(){ $("#app").innerHTML = '<div class="card">Server dashboard belum mendukung /api/pending.</div>'; });
+}
+function pendingBanner(){
+  fetch("/api/pending", { cache: "no-store" }).then(function(r){ return r.json(); }).then(function(items){
+    var b = document.getElementById("pend"); if (!b) return;
+    b.innerHTML = items.length ? '<a href="#approvals">' + items.length + " keputusan menunggu &rarr; buka Keputusan</a>" : "";
+    b.style.display = items.length ? "" : "none";
+    var n = document.getElementById("tab-n"); if (n) n.textContent = items.length ? String(items.length) : "";
+  }).catch(function(){});
+}
+
+function markTab(){
+  var dec = location.hash === "#approvals";
+  var a = document.getElementById("tab-sum"), b = document.getElementById("tab-dec");
+  if (a) a.className = dec ? "" : "on"; if (b) b.className = dec ? "on" : "";
+}
+function tick(){
+  markTab();
+  pendingBanner();
+  if (location.hash === "#approvals") return; // never re-render while a human is reading a payload
+  // every view except Keputusan is the overview built by the server from the ACTIVE run's system state —
+  // never from agent-written progress.json (it can belong to another run; user, 6 Nov)
+  $("#view-label").innerHTML = "&middot; ringkasan audit";
+  if (!document.getElementById("ov")) $("#app").innerHTML = '<div id="ov"></div>';
+  window.renderRunOverview(document.getElementById("ov"));
+  fetch("/api/run", { cache: "no-store" }).then(function(r){ return r.json(); }).then(function(d){
+    $("#foot").textContent = (d.run ? d.run + " · " : "belum ada audit berjalan · ") + "auto-refresh 2 dtk"; $("#live").textContent = "live";
+  }).catch(function(){ $("#live").textContent = "menunggu server…"; });
+}
+// --- Status jembatan Discord: dibaca dari berkas statis, tanpa mengubah server.js / tanpa restart ---
+function discordStatus(){
+  fetch("/discord-status.json", { cache: "no-store" }).then(function(r){ return r.json(); }).then(function(d){
+    var el = document.getElementById("discord-card"); if (!el) return;
+    var mode = d.mode || "off", o = d.outbox || {}, i = d.inbox || {}, w = d.webhook || {}, b = d.bot || {};
+    var label = mode === "live" ? "aktif" : (mode === "preview" ? "preview, belum kirim" : "nonaktif");
+    document.getElementById("discord-line").innerHTML = "<b>Discord</b>: " + esc(label) +
+      " &middot; webhook " + (w.configured ? "terisi" : "belum diisi") +
+      " &middot; bot " + (b.connected ? "terhubung" : (b.configured ? "token terisi, belum jalan" : "belum diisi")) +
+      " &middot; menunggu " + (o.menunggu || 0) + " &middot; terkirim " + (o.terkirim || 0) + " &middot; inbox " + (i.total || 0);
+    el.style.display = "";
+  }).catch(function(){ var el = document.getElementById("discord-card"); if (el) el.style.display = "none"; });
+}
+discordStatus();
+setInterval(discordStatus, 10000);
+tick();
+setInterval(tick, 2000);
+window.addEventListener("hashchange", function(){ markTab(); if (location.hash === "#approvals") loadApprovals(); else { var a = document.getElementById("app"); if (a && !document.getElementById("ov")) a.innerHTML = ""; window.lastRun = null; tick(); } });
+if (location.hash === "#approvals") loadApprovals();
+</script>
+</body>
+</html>

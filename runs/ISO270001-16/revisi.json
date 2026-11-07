@@ -1,0 +1,12 @@
+{
+ "versi_skill": "5.2",
+ "run": "ISO270001-16",
+ "item_revisi": "GATE-003",
+ "diputuskan_oleh": "Manager IT",
+ "keputusan": "Revisi",
+ "alasan_sistem": "Jadwal task staf sudah lewat (09:38/09:40/09:42/09:44 WIB) — task dengan jam lewat tidak akan menyala.",
+ "tindakan": "Manager menghitung ulang jadwal ke masa depan dan mengajukan item GATE baru (GATE-004) dengan scheduledAt dihitung ulang agar tidak lewat saat review.",
+ "catatan_manager": "Revisi dipicu oleh jadwal lewat; isi proposal (5 fokus) tidak berubah. Manager dapat menambahkan revisi konten proposal bila diinginkan.",
+ "status": "menunggu GATE baru (GATE-004)",
+ "waktu": "2026-11-07T09:34:00+07:00"
+}

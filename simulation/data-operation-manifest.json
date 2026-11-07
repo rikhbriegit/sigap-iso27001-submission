@@ -1,0 +1,596 @@
+{
+ "version": "data-operation-v5.4-2026-11-07",
+ "root": "G:/My Drive/Hackathon_Tencent\\Data-Operation",
+ "files": [
+  {
+   "file": "Arsitektur Jaringan dan Hasil Review Firewall Q3-2026.md",
+   "size": 1200,
+   "sha256": "854deb59b33bc1adf0e8a65fad310e5f0b49e80ff4987accb96b4c625eff1fdc"
+  },
+  {
+   "file": "Arsitektur Redundansi dan Hasil Uji Failover Mei 2026.md",
+   "size": 1311,
+   "sha256": "51bcb125f206d6b4e6dfc2ae433b3dc8e3e596d56ef346e28dbb5ae8993a9990"
+  },
+  {
+   "file": "Asesmen Keamanan dan SLA Layanan Jaringan 2026.md",
+   "size": 1246,
+   "sha256": "e595f944f020a0b5cb912634a18e713e8b378f2ae2bdc568c4d20375e818fb35"
+  },
+  {
+   "file": "Baseline Hardening Server v2.1 (CIS L1) dan Register Pengecualian.md",
+   "size": 1373,
+   "sha256": "f578ad277d078abc95dd3564743df9ccc4a6b157e612343d6095134f226c215f"
+  },
+  {
+   "file": "Contoh Catatan Rantai Kustodi INC-2026-013.md",
+   "size": 833,
+   "sha256": "8e6f63385edfa9f7e14f5a960b443569a284de754998124abb3b5544cd4d93e4"
+  },
+  {
+   "file": "Contoh Kebutuhan Keamanan Aplikasi - Portal Release 2.4.md",
+   "size": 1185,
+   "sha256": "3d89300ee087d840a3af729f84756dca6e2c8ba0becc3839de2ce3027c674084"
+  },
+  {
+   "file": "Contoh Perjanjian Pertukaran Data (template).md",
+   "size": 841,
+   "sha256": "390bd272d9135f8cdae732b24439c38823532f7d4d6f44c4cbe316d8be7a9fc7"
+  },
+  {
+   "file": "DPIA Portal Pelanggan 2026.md",
+   "size": 926,
+   "sha256": "f96e0bbe2c5f8c1f242a9760e7ddea82ef4388d23f5b3fb8bff1e187b4155e31"
+  },
+  {
+   "file": "Daftar Akun Istimewa dan Pengelolaan PAM Sep 2026.csv",
+   "size": 898,
+   "sha256": "d8c6afc34ba5111f3eda2a26be66edf6d4a0e8dd12a643d84f4ca25e077d9802"
+  },
+  {
+   "file": "Daftar Keanggotaan Forum dan Sumber Intelijen Komunitas 2026.md",
+   "size": 900,
+   "sha256": "20994801dd50558bcae7f5f7b883a3898c670bcd96cc443d8bb217d7231d5c39"
+  },
+  {
+   "file": "Daftar Kontak Otoritas dan Prosedur Eskalasi v1.1.md",
+   "size": 1083,
+   "sha256": "82c4875b37f87f19b313e932a2f8e1379180858762a1401699a4dac5a2a4f13b"
+  },
+  {
+   "file": "Daftar Lisensi Software Sep 2026.csv",
+   "size": 827,
+   "sha256": "6e4292471e238c1a3432d96edddfc3e556f10cceca6b7233935c35d62e3b6149"
+  },
+  {
+   "file": "Daftar Pemasok Aktif dan Skor Asesmen Sep 2026.csv",
+   "size": 696,
+   "sha256": "1ce72e1e115400d4a9bcc578456a4c4859ac3d168e28e22b2532e1e7c706e2d2"
+  },
+  {
+   "file": "Daftar dan Kontrol Program Utilitas Istimewa v1.0.md",
+   "size": 1138,
+   "sha256": "57a5863ab04bfccd919e7bf19708872798f64aa38fed089fcfea429564c58f79"
+  },
+  {
+   "file": "Definisi Peran RBAC Aplikasi HRIS v1.1.md",
+   "size": 1151,
+   "sha256": "2a6fbb09986eafd6d4c04bd9d867503da9c1e7a1c468e8aa6a2881059b36fa62"
+  },
+  {
+   "file": "Denah Penempatan Perangkat Ruang Server Jakarta 2026.md",
+   "size": 931,
+   "sha256": "690baab70383cb2f66f3293349a877fc659dd0111d571f041507c20e552ccd15"
+  },
+  {
+   "file": "Denah Zona Keamanan Fisik Kantor Jakarta dan Makassar v1.1.md",
+   "size": 1159,
+   "sha256": "95da3ba090b4414b75bfd9b9f677150e4696698771decd110f5ac9af71b83e9b"
+  },
+  {
+   "file": "Denah dan Standar Penataan Kabel Ruang Server 2025.md",
+   "size": 901,
+   "sha256": "1bad7a926a946ffeef871f6ba2b4d24410bbb8fbbccb8a9b6740697ab5200df6"
+  },
+  {
+   "file": "Hasil Spot Check Clear Desk Q3-2026.md",
+   "size": 776,
+   "sha256": "b3d9132fbdffad44f9123dc31b4b9ef8758a883edc2461dd67ca8ded6878f2e4"
+  },
+  {
+   "file": "Hasil Tabletop Ransomware 2026-08-20.md",
+   "size": 950,
+   "sha256": "93d12396406390a8c0278665e357eb83e62468447f449a8233a84a79dcb69244"
+  },
+  {
+   "file": "Indeks SOP Operasional Aktif 2026.csv",
+   "size": 798,
+   "sha256": "31ee3d76423792c01581b34d4f705991c14c70a8b0017c8b7645af5112cb94d5"
+  },
+  {
+   "file": "Inventaris Aset (CMDB extract) 2026-10-01.csv",
+   "size": 1383,
+   "sha256": "cef99bc6aeecb366b5b34745a56e36d88310b94935b0d9aefb7acdda1aec96b4"
+  },
+  {
+   "file": "Jadwal Retensi dan Log Penghapusan Informasi Q3-2026.md",
+   "size": 1184,
+   "sha256": "8ddfbedb61f8f8bfe08b07760d5ad4f9509b57e3b9b5093cd325848b16589d6d"
+  },
+  {
+   "file": "Jadwal dan Log Preventive Maintenance Perangkat 2026.csv",
+   "size": 797,
+   "sha256": "4b01aa7d6da117c21bc8dc3c7c295240b0e1d3da0be78922eeffd9c7833f3216"
+  },
+  {
+   "file": "Justifikasi Pengesampingan A.8.30 (SoA).md",
+   "size": 1396,
+   "sha256": "18fbe7ecc9cd80aa46240f28ba65860a4fa93b36f2e56e864637e8da9eb6584c"
+  },
+  {
+   "file": "Kajian Keamanan Proyek Portal Pembayaran 2026.md",
+   "size": 862,
+   "sha256": "c7cb8cc1ed2d39ddcf084afc4a61b247985e7e5de1fd995340bfbcbd415c653d"
+  },
+  {
+   "file": "Kebijakan Akses Kode Sumber dan Branch Protection 2026.md",
+   "size": 1073,
+   "sha256": "c5b39b8084f2a132d229e67efb0a783138b547be6496d268c45e02f71777e494"
+  },
+  {
+   "file": "Kebijakan Clear Desk dan Clear Screen v1.2.md",
+   "size": 681,
+   "sha256": "d86f9eb6d7faadc4288d4a44166cea215c1d18cb147a6f48ee2ab492a7e7e5ea"
+  },
+  {
+   "file": "Kebijakan Hak Kekayaan Intelektual v1.1.md",
+   "size": 787,
+   "sha256": "10054ecfd972f7f3965e8b6add5dcfac6664026d882ecb95b26b3b3a941527e5"
+  },
+  {
+   "file": "Kebijakan Instalasi Software (Whitelist) v1.3.md",
+   "size": 861,
+   "sha256": "6f19f3e77dc0354be61e79fe03d56e9d0320d187bbbe96338fe86794301fb050"
+  },
+  {
+   "file": "Kebijakan Kata Sandi dan Manajemen Kredensial v2.0.md",
+   "size": 889,
+   "sha256": "a1917a489da1daa90fce88062695c0db5ecb7df6e1a3b059a777e40c1711f3dc"
+  },
+  {
+   "file": "Kebijakan Keamanan Perangkat Pengguna dan MDM v2.0.md",
+   "size": 836,
+   "sha256": "9601601f02275ce6d87838b955a7bf73e2090dd31483177b4a516325a13fad21"
+  },
+  {
+   "file": "Kebijakan Keamanan Rantai Pasok ICT v1.0.md",
+   "size": 943,
+   "sha256": "7bfb079d8be8bf07870038c6865d41a95e4a65bc6d3bd78422dde0ef8ab361a2"
+  },
+  {
+   "file": "Kebijakan Kerja Jarak Jauh v1.3.md",
+   "size": 903,
+   "sha256": "ebf7d102a0aaf3dcb4795d71c6652fada8c406a7d9fde4204db51d237e6fb4cf"
+  },
+  {
+   "file": "Kebijakan Penggunaan Aset dan Sumber Daya TI v2.1.md",
+   "size": 1003,
+   "sha256": "f3fa39bfd3fdf09e8ac5960298d7b8ff2ed260d2663dd78cd35d8213402411ba"
+  },
+  {
+   "file": "Kebijakan Proteksi Data Pribadi v1.5.md",
+   "size": 1002,
+   "sha256": "45d5686679ccc0f83a79f2508d9ca6aaac591e2e924f26caffea2f7a3b416412"
+  },
+  {
+   "file": "Kebijakan Proxy dan Penyaringan Web v1.2.md",
+   "size": 1032,
+   "sha256": "b03e172e2db29bc1e9ae6420c2c3b9ac3f7b7bb0e881da5bbac97a88d4627aeb"
+  },
+  {
+   "file": "Kebijakan dan Rekap Alert DLP Sep 2026.md",
+   "size": 1142,
+   "sha256": "5164bc2de4aa89307a883bb72bedf6b36370833ee3349705b3fa678b46027694"
+  },
+  {
+   "file": "Klausul Keamanan Informasi dalam Kontrak Kerja (template Jan 2026).md",
+   "size": 1108,
+   "sha256": "dfe5a9c3a8f8b12dfe033bcaa21f9463082f2367cc610ebba3575ddba86da470"
+  },
+  {
+   "file": "Konfigurasi MFA dan SSO (ringkasan) 2026.md",
+   "size": 1115,
+   "sha256": "a0a2bf56c3d5e640911d266dd85863490f1f670fc042c7b42becc2f0e616f7ca"
+  },
+  {
+   "file": "Konfigurasi NTP dan Pemeriksaan Drift Sep 2026.md",
+   "size": 990,
+   "sha256": "d0c83bccfaf6d5e2b8b190e02634cef28ae509df56901f6035db9c602d481049"
+  },
+  {
+   "file": "Laporan Audit Internal ISMS Q1-2026.md",
+   "size": 978,
+   "sha256": "d46eaca1aadef353bc6a35bf0949e262c11da33dea4f8685ee6e2ae110aab822"
+  },
+  {
+   "file": "Laporan Insiden INC-2026-013 Phishing Invoice Palsu.md",
+   "size": 1144,
+   "sha256": "f019b9493fa2ae8eb85369a331a1f260ed53641405ed49c48b4c16e60e3a25aa"
+  },
+  {
+   "file": "Laporan Inspeksi Proteksi Fisik dan Lingkungan Jun 2026.md",
+   "size": 1009,
+   "sha256": "63cb926136e018b665fe1ba84e4f2ff37e0a54e3ab225c4187f2c694c588a2fa"
+  },
+  {
+   "file": "Laporan Intelijen Ancaman Q3-2026.md",
+   "size": 1161,
+   "sha256": "66c343d0271ca58cfabe0570d17474731fc8262aae91ce6ae4fa4ef6dbf2562f"
+  },
+  {
+   "file": "Laporan Pemeliharaan Utilitas Pendukung (UPS, Genset, AC) Sep-Okt 2026.md",
+   "size": 955,
+   "sha256": "5863cd5ef879619ec34e4c680c6da0a9d72e344c4fc74b354ae2fedffd4418d7"
+  },
+  {
+   "file": "Laporan Review Kepatuhan Kebijakan Keamanan Q2-2026.md",
+   "size": 961,
+   "sha256": "8b71cb9a57cd4ed36bac24d492818c968c35b10179a56824ed017559b9d3fc1d"
+  },
+  {
+   "file": "Laporan Review Layanan Pemasok Q3-2026.md",
+   "size": 1052,
+   "sha256": "89d34967b81e5679da72a497acc869bfdad073d6329ead05476749c96086bbfa"
+  },
+  {
+   "file": "Laporan Utilisasi Kapasitas Server Sep 2026.csv",
+   "size": 839,
+   "sha256": "b7b3c2dfcc8630dd38d1fa5665c307b8bff46bc51e6ff821992bc9dee7e659bd"
+  },
+  {
+   "file": "Legal Register NDP v2.1 Sep 2026.md",
+   "size": 1274,
+   "sha256": "b7d3c1b831fc4c231ff46fb454005c619b5e1a8732a806f83fdd5977583a6b9a"
+  },
+  {
+   "file": "Log Permintaan Reset Kata Sandi (sampel Okt 2026).csv",
+   "size": 601,
+   "sha256": "d7ba33e9aa9bbb108e27e97bdf2385b8d8823c9a524b2d604705e4c44783bad4"
+  },
+  {
+   "file": "Matriks Pemisahan Tugas dan Contoh Transaksi 2026.csv",
+   "size": 594,
+   "sha256": "52d41360aaa2821ac789a936a80bcb7795c761c36f1d1577348206861d7c1612"
+  },
+  {
+   "file": "Matriks Peran dan Tanggung Jawab Keamanan Informasi v1.4.md",
+   "size": 1191,
+   "sha256": "caa9a93f57aa52a198bc531d68f80382330dc7b0e158b9ff5c3c0090ffc56c13"
+  },
+  {
+   "file": "Notulen Rapat Komite Keamanan Informasi 2026-09-15.md",
+   "size": 1135,
+   "sha256": "096c4f4554ba6362b99b775136b7b8ab1fff1a1b62dcf05464abbfa8323e5a92"
+  },
+  {
+   "file": "Pedoman Pelabelan Dokumen, Email, dan Media v1.2.md",
+   "size": 865,
+   "sha256": "a68d1b4c1602c25162d40c1cb7ea2b59dd2825d8d079081de38c3bec1c157b9e"
+  },
+  {
+   "file": "Pedoman Secure Coding v1.1.md",
+   "size": 1106,
+   "sha256": "4e16f991ccea1a75febd28305133fa0685b55c554d1eb6cc99a1f5f730738f36"
+  },
+  {
+   "file": "Pedoman Secure SDLC v2.0.md",
+   "size": 1149,
+   "sha256": "38fa1562dd8638b4dbe0f7577da2acc9271af5e36e265cde81f77c51dff215ba"
+  },
+  {
+   "file": "Pengumuman HR No.112-2026 Review Hak Akses Kuartalan 27 Okt 2026.md",
+   "size": 786,
+   "sha256": "5ea77278d2e7a0dd2b669307b0f8ec0d8023bfd95b0280d1e24af23eeb70de8d"
+  },
+  {
+   "file": "Peta Cakupan CCTV dan Kebijakan Rekaman v1.0.md",
+   "size": 1058,
+   "sha256": "6757d57b5aef6b8b893de9fa1f0e61f49567d6cd198ea8c459bde804d1093092"
+  },
+  {
+   "file": "Post-Mortem dan Pembelajaran INC-2026-013.md",
+   "size": 938,
+   "sha256": "048f2c3908b36545a737c1ba1207f8d5838285f631143ef2f68d3bd31d1120c3"
+  },
+  {
+   "file": "Prinsip Arsitektur Aman dan Catatan Review Desain 2026.md",
+   "size": 1161,
+   "sha256": "1df2d5a63629c39980546a9392585263dd2532dc7aefd06307b09e1dcf5768e5"
+  },
+  {
+   "file": "Prosedur Data Masking Lingkungan Dev-Test v1.2.md",
+   "size": 1266,
+   "sha256": "59ead53f514c61738d090d92cc90d1752c96eea962c8c4c0a1497ca7c6ea3503"
+  },
+  {
+   "file": "Prosedur Data Pengujian dan Proteksinya v1.1.md",
+   "size": 933,
+   "sha256": "509d0a79d729ae7c5d4e982c3ef18c0fccea6aaafcc8e135ef7a38244f0d7016"
+  },
+  {
+   "file": "Prosedur Disiplin Pelanggaran Keamanan Informasi v1.1.md",
+   "size": 1250,
+   "sha256": "e24c87befa05e3e120ab90043f6a7e829b61d660f1cf101c5e58e7da2cb08889"
+  },
+  {
+   "file": "Prosedur Due Diligence Pemasok v1.2.md",
+   "size": 823,
+   "sha256": "f931796edf74b7e7cba2f1f1ca5d680906d595ff86a90bbfa6b4f1b03142bb57"
+  },
+  {
+   "file": "Prosedur Keamanan Aset di Luar Lokasi Kantor v1.1.md",
+   "size": 761,
+   "sha256": "11a882a07cdea75a374bc07ca202df00f2e91e987d59f74dc854d7ba420d2d2f"
+  },
+  {
+   "file": "Prosedur Keamanan Informasi saat Gangguan Bisnis v1.3.md",
+   "size": 823,
+   "sha256": "4a1970744d3189fc51b00e8dde833a891fc90b9839d6552a4d516794ca15219e"
+  },
+  {
+   "file": "Prosedur Kerja dan Kunjungan Area Aman (Ruang Server) v1.0.md",
+   "size": 976,
+   "sha256": "45dd058bfaf07891a2dabe5fd073b9e0dde26914b82733e7ce6e1a4242216c02"
+  },
+  {
+   "file": "Prosedur Pengamanan Kantor, Ruang, dan Fasilitas v1.2.md",
+   "size": 882,
+   "sha256": "89e55b3cec1c7323e48c96191a14b995d543c211898e84700c4c98359a73ffc6"
+  },
+  {
+   "file": "Prosedur Proteksi Sistem selama Pengujian Audit v1.0.md",
+   "size": 1183,
+   "sha256": "d1ec832c387329e54337a250a1272ea15742a10e32c74e3961e8df9915f6fb06"
+  },
+  {
+   "file": "Prosedur Screening Kandidat dan Karyawan v1.2.md",
+   "size": 844,
+   "sha256": "fd16a3c04b12ed5779373acb5ab1c21a844ebc90669d326bab831937433920ff"
+  },
+  {
+   "file": "Prosedur Tanggung Jawab Pasca-Terminasi dan Exit Interview v1.2.md",
+   "size": 1064,
+   "sha256": "85d4826886d918187d79bb370f4f50f3e5a5b7e3d78fed9fbd882a5c320fee9d"
+  },
+  {
+   "file": "Register Media Penyimpanan dan SOP Pengelolaannya v1.2.md",
+   "size": 978,
+   "sha256": "2a9208874b4794c9d83b2c4dd9a8137c74dcdb8706d6c89d0ce3ddd0d29bb379"
+  },
+  {
+   "file": "Rekap Acknowledgment Kebijakan Penggunaan Aset per 30 Sep 2026.md",
+   "size": 603,
+   "sha256": "a5d1c73dda75ecbdf5dc68d774e666db54498f976265851e1b14716d838853f9"
+  },
+  {
+   "file": "Rekap Exit Clearance 2026.csv",
+   "size": 403,
+   "sha256": "6d84c8119bc53dc6ddaf1bbe2795f1b40902a00f0a4e98ab7cf120ae0ed61ffb"
+  },
+  {
+   "file": "Rekap Permintaan Instalasi Okt 2026.csv",
+   "size": 684,
+   "sha256": "4056d5336ca8e6ff2e9141018bd83eabc6a6f798c55336669ced69d91beb3545"
+  },
+  {
+   "file": "Rekap Perubahan dan CAB Okt 2026.csv",
+   "size": 937,
+   "sha256": "a007545ee82479256ff31bc87cb68b2caf9d303f352c591003d5553be89cf8f8"
+  },
+  {
+   "file": "Rekap Tiket Event dan Keputusan Klasifikasi Q3-2026.csv",
+   "size": 1047,
+   "sha256": "3865694270459e7e9887750d747f0353ded698d301b021dd3bf181f8ae7c738a"
+  },
+  {
+   "file": "Rencana Kesiapan ICT untuk Kontinuitas Bisnis (DRP) v2.0.md",
+   "size": 1071,
+   "sha256": "42fc887b931ae720775020ec38f689ce0eed025c2b7dbd7e627307b69b6825b5"
+  },
+  {
+   "file": "Rencana Segmentasi Jaringan (VLAN) 2026.md",
+   "size": 1291,
+   "sha256": "a45b7b0d06fcd186d6716f64aa3e0d3d6d64ed019d719433662ea315c3c44a2a"
+  },
+  {
+   "file": "Ringkasan Hasil SAST Sep 2026.csv",
+   "size": 382,
+   "sha256": "6e7d07cb26afbc1ce29478393aa723616caaba1fbf24d347f1db37d0d6241bec"
+  },
+  {
+   "file": "Ringkasan Manajemen Kerentanan Q3-2026.md",
+   "size": 1109,
+   "sha256": "e2ceaef8ff6e8982eb261d6765e00c1a3f2b54b7be923abae3e1f9d9eb3f5b6f"
+  },
+  {
+   "file": "Ringkasan Pentest Eksternal Juni 2026.md",
+   "size": 1174,
+   "sha256": "6b704858226400143dfd56feab240acbad0e9a026bfa999f7fdbd6c7b883c9c5"
+  },
+  {
+   "file": "SK-045-DIR-2026 Penunjukan Pemilik Kontrol.md",
+   "size": 1127,
+   "sha256": "e5ce3544e10df36f47400c40f6925b1db8d1841f3f36eab3d747b94693af9102"
+  },
+  {
+   "file": "SOP Forensik dan Rantai Kustodi v1.2.md",
+   "size": 742,
+   "sha256": "e2d2a15d2986ddc918d0399325076313718223d4328be1fe7b7e8d1d6756674f"
+  },
+  {
+   "file": "SOP Manajemen Insiden Keamanan Informasi v3.1.md",
+   "size": 1077,
+   "sha256": "6d84d5ef890175ef24313d982ba940cf3baf74ca8644650753a228360a376ff3"
+  },
+  {
+   "file": "SOP Manajemen Perubahan v1.4.md",
+   "size": 953,
+   "sha256": "6a0f300c618206052e9fe614324d5249092f1477c592f49a90f833be51aa52dc"
+  },
+  {
+   "file": "SOP Operasional Server Produksi v2.3 (extract).md",
+   "size": 1057,
+   "sha256": "2bc851e73cf4e6fe90d5c4e59ce2ae54956a02ed7ecb4cad9e26312cd79dd189"
+  },
+  {
+   "file": "SOP Pelaporan Event Keamanan Informasi v2.0.md",
+   "size": 994,
+   "sha256": "985b65eeac425a469e2de8fb52765391ab4fbf94ab00f85840ef6ca0a43859e1"
+  },
+  {
+   "file": "SOP Pembuangan dan Penggunaan Ulang Perangkat v1.1.md",
+   "size": 850,
+   "sha256": "b2ab3519896e7bf3fad140fdc361f5cb7bb4853f79a3c92d00f221e27dd3b105"
+  },
+  {
+   "file": "SOP Pemisahan Tugas v1.2.md",
+   "size": 806,
+   "sha256": "374a6e4812187cbcf0518b9499414fc6cf23f515dcb16b9757ae69b69a1ec92f"
+  },
+  {
+   "file": "SOP Pengelolaan Inventaris Aset v1.3.md",
+   "size": 783,
+   "sha256": "4ea269ba6466ce2312f2ef6211af5f05ccc1b4b06a4f51b7a0edb3dd4dad35c9"
+  },
+  {
+   "file": "SOP Pengembalian Aset saat Terminasi v1.1.md",
+   "size": 697,
+   "sha256": "a187c26709d74729d1c59ddf86fe50465c404ddc8cd4323667ec97f7b69f22fe"
+  },
+  {
+   "file": "SOP Transfer Informasi Eksternal v1.4.md",
+   "size": 874,
+   "sha256": "4a705fd30be38a629ec75243accbc4ae242548836ed29a579762ca44989784aa"
+  },
+  {
+   "file": "Sampel Hasil Screening Kandidat 2026.csv",
+   "size": 615,
+   "sha256": "a8503d73f5ccaeb31c9f1e3d31ddc2bf605ae0462ebc3ab8a0db41f7d8b2cc4e"
+  },
+  {
+   "file": "Sampel Klausul Keamanan Kontrak PT Solusi Data Nusantara 2026.md",
+   "size": 1093,
+   "sha256": "28a4a98eb86da4981ef22cd7bdc2e0e61791caf82663e176aaa8dbf9ce8088a3"
+  },
+  {
+   "file": "Serah Terima Perangkat ke Cabang Makassar Okt 2026.csv",
+   "size": 428,
+   "sha256": "0d834b578bb3eb778eb7f8efc45a1759439e01d1f97b0a72b89ef8a7231844a5"
+  },
+  {
+   "file": "Sertifikat Penghancuran Media Jul 2026.md",
+   "size": 970,
+   "sha256": "588d1117f5b83e3ab36990f017dac5bbd4015b2f612eafa23068491649c7e919"
+  },
+  {
+   "file": "Standar Gerbang Keamanan dalam Manajemen Proyek v2.0.md",
+   "size": 750,
+   "sha256": "3aa3dc36bb54bf354c05ca8a38ec7ebac23d4d696693ab44112681f7d31e4241"
+  },
+  {
+   "file": "Standar Hak Akses Istimewa v1.1.md",
+   "size": 857,
+   "sha256": "b3e5cf2a5c9ca2a4e1d95aff7fce5f49ec32f968657f2ba1c8a3885e415ed1e8"
+  },
+  {
+   "file": "Standar Klasifikasi Informasi v2.0.md",
+   "size": 923,
+   "sha256": "b1b10887b1fa9906a4a4805314b4dd9a0d67cd741b8216c0a7a4c1aaf9fd02e5"
+  },
+  {
+   "file": "Standar Manajemen Identitas dan Akun v1.3.md",
+   "size": 892,
+   "sha256": "dacff9fa4a84125f367dff674e612b505aacdeb9321465320acfb4725a50dddf"
+  },
+  {
+   "file": "Standar Retensi dan Perlindungan Catatan v1.2.md",
+   "size": 1156,
+   "sha256": "99833395ce1d2a51c9456526b22f9097ecccdca560f40677d8fdc110b8980943"
+  },
+  {
+   "file": "Statistik Akses VPN Remote Sep 2026.csv",
+   "size": 352,
+   "sha256": "3ffa5759c8a1eeb11a1e908b93c2dc201aeede7cab14660dc07533a4ba32e00a"
+  },
+  {
+   "file": "Statistik Pelaporan Event 2026 Q1-Q3.csv",
+   "size": 506,
+   "sha256": "fe74ef197e4dc146f0adfce6ab93288c15dff38e75064d7e34f2b2775f6bcb56"
+  },
+  {
+   "file": "Status Enkripsi Disk dan Kepatuhan MDM per 15 Okt 2026.csv",
+   "size": 555,
+   "sha256": "3c46aa923f0ff88bc1f1da97d2313441a66037d05ba217b50c6f40df450bba3b"
+  },
+  {
+   "file": "Test Case Keamanan UAT Portal Release 2.4 Okt 2026.md",
+   "size": 1155,
+   "sha256": "b3c4e4ed46c29a37a10eab74a41b85c9a582be50bacb1ec239e3b00bb7ae2bf6"
+  },
+  {
+   "file": "Topologi dan Pemisahan Lingkungan Dev-Test-Prod 2026.md",
+   "size": 1086,
+   "sha256": "e9bb9fa9f8a1bd7548506f2beb71330679992221bceb0f8b62e7fc891a3a530b"
+  },
+  {
+   "file": "ev-a5-01-kebijakan-ksi-v3.0.md",
+   "size": 982,
+   "sha256": "96ab6497bd092e5815c06babf325543ab2dce9425d908eb333e023ba6f65f3ad"
+  },
+  {
+   "file": "ev-a5-15-matriks-akses.md",
+   "size": 860,
+   "sha256": "ad564720716aca8c5b20e9d3de7cf9e420814ac8d6b08334f5360b7477735f4d"
+  },
+  {
+   "file": "ev-a5-18-sop-access-control-v1.2-2024.md",
+   "size": 767,
+   "sha256": "0ea71cc21a53440cd9e2368ffeeb9bf5cb660891be52bc983e2b2c201d8c1335"
+  },
+  {
+   "file": "ev-a5-23-daftar-cloud.md",
+   "size": 1135,
+   "sha256": "c000a91e2927422c64ef5095c39fd8a057771f76f90454e68abd9c659a84afde"
+  },
+  {
+   "file": "ev-a6-06-nda-sampel.md",
+   "size": 1044,
+   "sha256": "7d9c4e9dc18b4df16b3b1a53253e61648abf41be000873a7dadf064d72b935c7"
+  },
+  {
+   "file": "ev-a7-02-log-pengunjung.md",
+   "size": 974,
+   "sha256": "d7d4ada599faf4e6dd40326e48aa3b16bf21cc86c487a5ab5bca44c5bbe22baf"
+  },
+  {
+   "file": "ev-a8-07-config-malware.md",
+   "size": 978,
+   "sha256": "77f3eb3a83b8636e70a6db4685100b0e2919fb182c494fbd37c5361aee192959"
+  },
+  {
+   "file": "ev-a8-13-konfigurasi-backup.md",
+   "size": 999,
+   "sha256": "db4d7c14e9c7ec3f3ba9694fae9d4c46ba706244ffe2ebc72f2f90d5909677cd"
+  },
+  {
+   "file": "ev-a8-15-kebijakan-logging.md",
+   "size": 1234,
+   "sha256": "8b0961c600707375e29d53c0d05cae8692969f6138d44b3cabca0e1d5e034931"
+  },
+  {
+   "file": "ev-a8-24-config-tls.md",
+   "size": 930,
+   "sha256": "29446387c442e7c01abed3dd4fa7f330506717275bdd05cf1d2c470108d5c2b8"
+  }
+ ]
+}

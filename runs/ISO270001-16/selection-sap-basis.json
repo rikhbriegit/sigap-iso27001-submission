@@ -1,0 +1,20 @@
+[
+ {
+  "file": "ev-a8-15-kebijakan-logging.md",
+  "item": "A.8.15",
+  "butir": "1",
+  "reason": "Kebijakan Logging (Log-Policy v2, Maret 2026): event wajib dilog (autentikasi sukses/gagal, perubahan hak akses, aktivitas akun istimewa, perubahan konfigurasi, akses data sensitif), field severity pada sampel SIEM (level), dan pemilik kebijakan Rina Kartika (IT Infrastructure). Juga memuat Sampel log SIEM (butir 2) serta retensi 180 hari hot + 1 tahun arsip WORM dan akses log hanya SOC/IT Security + log-of-log (butir 3). Menjawab butir 1 (kebijakan logging: apa yang dilog, level, pemilik).",
+  "sha256": "8b0961c600707375e29d53c0d05cae8692969f6138d44b3cabca0e1d5e034931",
+  "size": 1234,
+  "at": "2026-11-07T03:26:10.248Z"
+ },
+ {
+  "file": "Standar Retensi dan Perlindungan Catatan v1.2.md",
+  "item": "A.8.15",
+  "butir": "3",
+  "reason": "Standar Retensi v1.2 menetapkan retensi Log keamanan 180 hari hot + 1 tahun arsip (WORM) serta perlindungan catatan dari pemalsuan via arsip digital WORM/tulis-sekali dan audit trail SAP yang tidak dapat diedit manual. Menguatkan butir 3 (kebijakan retensi log + bukti perlindungan terhadap manipulasi log).",
+  "sha256": "99833395ce1d2a51c9456526b22f9097ecccdca560f40677d8fdc110b8980943",
+  "size": 1156,
+  "at": "2026-11-07T03:26:10.402Z"
+ }
+]

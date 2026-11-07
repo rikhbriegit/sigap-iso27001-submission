@@ -1,0 +1,7 @@
+Bulan,No Tiket,Ringkasan Event,Dinilai oleh,Keputusan,Prioritas,Tindak lanjut
+Juli,TKT-2026-07-014,Email phishing berlink (2 laporan karyawan),IT Security,Bukan insiden - spam terblokir,P4,Kenaikan aturan filter gateway
+Juli,TKT-2026-07-021,Laptop lambat + process mencurigakan,IT Security,Bukan insiden - software tidak dikenal user,P4,EDR whitelist software sah
+Agustus,TKT-2026-08-003,USB pribadi dimasukkan staf cabang,IT Security + IT Ops,INSIDEN - malware USB terdeteksi,P3,Endpoint terisolasi otomatis, dibersihkan (lihat A.8.7)
+September,TKT-2026-09-011,Sempilan login gagal di portal pelanggan,IT Security,INSIDEN kecil - brute force terblokir otomatis,P3,Aturan rate limit dicek (aktif), IP diblokir
+September,TKT-2026-09-019,Email "invoice palsu" massal ke divisi pengadaan,IT Security,INSIDEN - phishing P2,INC-2026-013,Laporan insiden terpisah (lihat A.5.26)
+Oktober,TKT-2026-10-002,Notifikasi vendor tentang advisory kerentanan perangkat jaringan,IT Infra,Dibuka - masuk manajemen kerentanan,P3,Patch dievaluasi (lihat A.8.8)

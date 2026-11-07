@@ -1,0 +1,23 @@
+{
+ "run": "ISO270001-16",
+ "jenis": "klarifikasi bukti FASE 4 (SIGAP v5.2 §2 / §4)",
+ "id_klarifikasi": "KL-04",
+ "item": "A.8.15",
+ "judul_item": "Logging",
+ "owner": "sap-basis",
+ "pic_kontak": "c06 — Yoga Saputra (Staf SAP Basis, Jakarta, WIB)",
+ "task_pengumpul": "sap-basis",
+ "butir_kurang": "Butir 2 (contoh log sistem SAP/infrastruktur) — hanya log SIEM keamanan, tidak ada contoh log aplikasi/transaksi SAP; butir 1 (kebijakan logging termasuk level) — tidak ada skema level logging (DEBUG/INFO/WARN/ERROR) yang terdokumentasi, hanya field severity pada sampel; disertai konflik pemilik dokumen.",
+ "pertanyaan": "Kepada PIC c06 (Yoga Saputra, SAP Basis) melalui task pengumpul sap-basis: (a) ev-a8-15-kebijakan-logging.md memuat sampel log SIEM (auth.success, auth.failed, config.change, access.granted) tetapi tidak ada contoh log transaksi/aplikasi SAP; apakah contoh log aplikasi SAP (mis. log transaksi/audit SAP) tersedia di Data-Operation? (b) Apakah penetapan level logging (DEBUG/INFO/WARN/ERROR dan event mana pada level mana) terdokumentasi — dokumen saat ini hanya memuat field severity=medium pada satu alert? (c) Dokumen menyebut Owner \"Rina Kartika (IT Infrastructure)\" sedangkan PIC permintaan ini c06 (Yoga Saputra, SAP Basis); mohon konfirmasi siapa pemilik sah kebijakan logging agar temuan dialamatkan ke pemilik yang benar.",
+ "bukti_terkait_di_indeks": [
+  "ev-a8-15-kebijakan-logging.md",
+  "Standar Retensi dan Perlindungan Catatan v1.2.md"
+ ],
+ "options": [
+  "Dokumen tersedia di Data-Operation",
+  "Akan tersedia (tanggal)",
+  "Belum tersedia",
+  "Perlu diskusi"
+ ],
+ "catatan": "Keputusan diambil MANUSIA di dashboard http://127.0.0.1:4173/?run=ISO270001-16#approvals. Auditor DILARANG menjawab sendiri. Jawaban kartu disalin ke klarifikasi-bukti.json pada turn berikutnya sebagai jawaban_kartu + conversation = \"dashboard #approvals\" (state.js menolak status dijawab tanpa keduanya). Teks bebas bukan approval."
+}
