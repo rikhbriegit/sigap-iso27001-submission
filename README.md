@@ -5,7 +5,9 @@
 > **Blurb (≤ 10 words):** *Audit ISO 27001 yang meminta izin, menunjukkan bukti, mencatat.*
 > *ISO 27001 self-assessment that asks permission, shows evidence, records everything.*
 
-📺 **Demo video:** https://youtu.be/Zk3_1v3RHO0 · 📄 [Accountability sheet](ACCOUNTABILITY.md) · 🧪 [Test results](TEST-RESULTS.md) · 🏗️ [Architecture](docs/ARCHITECTURE.md) · 💡 [Product sharing](PRODUCT-SHARING.md)
+📺 **Presentation & demo:** https://youtu.be/Zk3_1v3RHO0 · 🎬 **Full run ISO270001-16 (24 min, WorkBuddy start to finish):** https://youtu.be/FrG2MBqTqVQ
+
+📄 [Accountability sheet](ACCOUNTABILITY.md) · 🧪 [Test results](TEST-RESULTS.md) · 🏗️ [Architecture](docs/ARCHITECTURE.md) · 💡 [Product sharing](PRODUCT-SHARING.md)
 
 > **What SIGAP is — and is not.** SIGAP **does not replace** an external auditor or a real ISO 27001 certification. A company can run a
 > readiness **self-assessment** before the certification auditor comes; SIGAP **simulates** that process end to end inside WorkBuddy, on a
