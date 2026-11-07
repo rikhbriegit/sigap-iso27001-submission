@@ -5,3 +5,4 @@ progress-dashboard/discord-status.json
 progress-dashboard/discord.config.json
 .env
 __pycache__/
+*.tmp-*
