@@ -1,12 +1,12 @@
 ---
 name: iso27001-assessment-workflow
 triggers: ["mulai audit ISO 27001", "jalankan asesmen", "self assessment ISO", "asesmen kesiapan ISO", "siapkan audit ISO", "gap assessment", "mulai self assessment"]
-version: 5.2
-description: Prosedur SIGAP v5.0 — audit kesiapan ISO/IEC 27001:2022 yang dipimpin auditor eksternal, dengan pemisahan tugas internal vs eksternal, semua keputusan lewat kartu pilihan, dan setiap aksi keluar terikat ke payload ber-hash.
+version: 5.4
+description: Prosedur SIGAP v5.4 — audit kesiapan ISO/IEC 27001:2022 yang dipimpin auditor eksternal, dengan pemisahan tugas internal vs eksternal, semua keputusan lewat kartu pilihan, dan setiap aksi keluar terikat ke payload ber-hash.
 agent_created: true
 ---
 
-# SIGAP v5.2 — Agen audit ISO yang meminta izin sebelum bertindak
+# SIGAP v5.4 — Agen audit ISO yang meminta izin sebelum bertindak
 
 **BAHASA: semua output (chat, narasi kerja, ringkasan, kartu, file) SELALU Bahasa Indonesia. Jangan menulis dalam bahasa Mandarin atau Inggris kecuali kutipan dokumen. Setelah konteks dipadatkan ("Context compressed") atau saat melanjutkan tugas, baca ulang bagian ini dan §0 SEBELUM menulis apa pun.**
 

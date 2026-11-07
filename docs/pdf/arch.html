@@ -1,0 +1,73 @@
+<!doctype html><html><head><meta charset="utf-8"><title>SIGAP Architecture</title><style>
+@page{size:13.333in 7.5in;margin:0}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Inter,Arial,sans-serif;color:#EEF4FF;background:#0B1730}
+.page{width:13.333in;height:7.5in;padding:.42in .55in;position:relative;page-break-after:always;overflow:hidden;background:#0B1730}
+.page:last-child{page-break-after:auto}
+h1{margin:0;font-size:30px;font-weight:800;letter-spacing:-.3px}
+h1 span{color:#7DD3FC;font-style:italic}
+.sub{color:#9DB2D1;font-size:15px;margin:4px 0 16px}
+.foot{position:absolute;left:.55in;right:.55in;bottom:.22in;display:flex;justify-content:space-between;color:#6F86A8;font-size:11px}
+img.diag{display:block;width:100%;height:auto;max-height:5.55in;object-fit:contain;border-radius:10px}
+table{width:100%;border-collapse:separate;border-spacing:0 6px;font-size:13.5px}
+th{text-align:left;color:#7DD3FC;font-size:12px;letter-spacing:.6px;padding:4px 12px}
+td{background:#13264A;padding:9px 12px;vertical-align:top;color:#DCE7F7}
+td:first-child{border-radius:8px 0 0 8px;font-weight:700;color:#EEF4FF;width:19%}
+td:last-child{border-radius:0 8px 8px 0}
+code{font-family:Consolas,monospace;color:#7DD3FC;font-size:12.5px}
+.cols{display:grid;grid-template-columns:1.05fr 1fr;gap:26px}
+.step{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.n{flex:0 0 30px;height:30px;border-radius:50%;border:2px solid #2DD4BF;color:#2DD4BF;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.st b{display:block;font-size:15px}.st span{color:#9DB2D1;font-size:13px}
+.box{background:#13264A;border-radius:10px;padding:12px 14px;margin-bottom:9px}
+.box b{color:#FBBF24;font-size:14px}.box div{color:#C9D7EC;font-size:12.8px;margin-top:3px}
+</style></head><body>
+
+<div class="page">
+  <h1>SIGAP — <span>architecture</span></h1>
+  <div class="sub">Components and five trust boundaries · v5.4 · ISO 27001 readiness self-assessment on WorkBuddy (Tencent "AI CAN DO IT" 2026, Challenge B)</div>
+  <img class="diag" src="../architecture.svg">
+  <div class="foot"><span>B1 human decisions · B2 agents by role · B3 dashboard server (no AI) · B4 deterministic tools · B5 data + external</span><span>1 / 3</span></div>
+</div>
+
+<div class="page">
+  <h1>Components and <span>roles</span></h1>
+  <div class="sub">Agents propose, code verifies, a human decides</div>
+  <table>
+    <tr><th>COMPONENT</th><th>WHERE</th><th>ROLE</th></tr>
+    <tr><td>Manager chat</td><td style="width:24%">WorkBuddy conversation <code>ISO270001-NN Manager</code></td><td>IT Manager (internal auditee): opens the run, GATE 1, releases its own evidence, accepts the report, owns the CAP. Never assesses.</td></tr>
+    <tr><td>Auditor task</td><td>WorkBuddy scheduled task · Gmail + Drive</td><td>External auditor: proposes 3–5 focus items and a schedule, checks completeness, assesses, QA, publishes and distributes the report.</td></tr>
+    <tr><td>Staff tasks</td><td>WorkBuddy scheduled tasks · Drive only</td><td>Copy documents byte-identical from Data-Operation into their own folder; request a release per file. No Gmail.</td></tr>
+    <tr><td>Skills</td><td><code>skills/*/SKILL.md</code></td><td>Prompt layer: roles, nine phases FASE 0–8, card catalogue, rules 0–14. Loaded by the trigger <code>mulai audit ISO 27001</code>.</td></tr>
+    <tr><td>SIGAP dashboard</td><td><code>progress-dashboard/</code> · <code>127.0.0.1:4173</code></td><td>The single place for human decisions; opens itself in the Manager chat's right panel; plain-language checks lock unsafe options; fixed reasons for Revisi/Tolak; live agent status.</td></tr>
+    <tr><td>Pengawas</td><td>inside the dashboard server (no AI)</td><td>Every 60 s reads the real WorkBuddy task state, re-runs the SAME stalled task (max 3 per phase), switches model when saturated, then escalates to a human.</td></tr>
+    <tr><td>Deterministic tools</td><td><code>tools/</code> (Node.js)</td><td><code>outbox.js</code> sealed outbound items · <code>evidence.js</code> byte-identical evidence, no scores · <code>integrity.js</code> / <code>audit.js</code> sealed records, hash-chained log.</td></tr>
+  </table>
+  <div class="foot"><span>github.com/rikhbriegit/sigap-iso27001-submission · docs/ARCHITECTURE.md</span><span>2 / 3</span></div>
+</div>
+
+<div class="page">
+  <h1>One decision, <span>end to end</span></h1>
+  <div class="sub">How an outbound action (email, invitation, task, release, report) moves through the boundaries</div>
+  <div class="cols">
+    <div>
+      <div class="step"><div class="n">1</div><div class="st"><b>Agent creates an outbox item</b><span>exact payload (recipients, time, body) + sha256 — nothing is sent yet</span></div></div>
+      <div class="step"><div class="n">2</div><div class="st"><b>Dashboard shows it with automatic checks</b><span>contacts only · no duplicate · schedule in the future · no internal text · unsafe options locked</span></div></div>
+      <div class="step"><div class="n">3</div><div class="st"><b>Human decides</b><span>fixed option; Revisi/Tolak need a fixed reason; free text never approves</span></div></div>
+      <div class="step"><div class="n">4</div><div class="st"><b><code>outbox.js verify</code></b><span>payload still matches the approved sha256, item not stale</span></div></div>
+      <div class="step"><div class="n">5</div><div class="st"><b>Execute</b><span>WorkBuddy connector (Gmail) or task creation</span></div></div>
+      <div class="step"><div class="n">6</div><div class="st"><b><code>done</code> with proof</b><span>e.g. a Gmail message id — without it the item is not "sent"</span></div></div>
+      <div class="step"><div class="n">7</div><div class="st"><b>Hash-chained audit log + decision note</b><span>who decided, what, when, proof</span></div></div>
+    </div>
+    <div>
+      <div class="box"><b>Rules in code, not only in prompts</b><div>Agents broke prompt rules in testing (run 11: the Manager edited its own guard tool). Cost: more tooling; scope/automation rules are still partly prompt-level.</div></div>
+      <div class="box"><b>Pengawas is server logic, not another agent</b><div>Stalls came from the platform (model saturation, 429); recurring tasks run at most hourly. Cost: needs WorkBuddy's local debug port.</div></div>
+      <div class="box"><b>Dashboard for task-made items</b><div>Cards were not rendered inside task sessions (run 08) — the dashboard lives in the Manager chat's right panel.</div></div>
+      <div class="box"><b>Conformity statuses, no scores</b><div>Conform · Minor NC · Major NC · OFI · N/A — a number looks more certain than the evidence.</div></div>
+      <div class="box"><b>Evidence only from Data-Operation, byte-identical</b><div>Missing evidence becomes a clarification card ("Belum tersedia"), never a guess.</div></div>
+      <div class="box"><b>Separation of duties</b><div>The external Auditor issues and sends; the Manager never assesses.</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>Readiness simulation on a fictional company — does not replace an external auditor or certification</span><span>3 / 3</span></div>
+</div>
+</body></html>

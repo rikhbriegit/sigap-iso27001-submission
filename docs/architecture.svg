@@ -39,7 +39,7 @@
   <text x="322" y="430" fill="#9DB2D1" font-size="13">copy evidence from Data-Operation</text>
   <text x="322" y="448" fill="#9DB2D1" font-size="13">Drive only · no Gmail</text>
   <rect x="310" y="498" width="260" height="78" rx="10" fill="#1B3460"/>
-  <text x="322" y="524" fill="#EEF4FF" font-size="15" font-weight="700">skills/*.md (prompt rules)</text>
+  <text x="322" y="522" fill="#EEF4FF" font-size="14" font-weight="700">skills/*/SKILL.md (prompt rules)</text>
   <text x="322" y="546" fill="#9DB2D1" font-size="13">roles, phases, cards, rules 0–14</text>
 
   <!-- B3 server -->
@@ -89,14 +89,23 @@
   <!-- arrows -->
   <defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9DB2D1"/></marker></defs>
   <g stroke="#9DB2D1" stroke-width="2" fill="none" marker-end="url(#a)">
+    <!-- trigger: IT Manager -> Manager chat -->
     <path d="M240 195 H308"/>
+    <!-- Auditor -> Pengawas (read state) -->
     <path d="M570 314 H638"/>
+    <!-- Pengawas -> Auditor (Run now) -->
     <path d="M638 350 H572"/>
-    <path d="M440 150 V 90 H 1100 V 148"/>
+    <!-- anything leaving the agent layer -> outbox -->
+    <path d="M575 100 V 90 H 1100 V 148"/>
+    <!-- checks.js -> outbox -->
     <path d="M900 533 H 935 V 230 H 968"/>
+    <!-- evidence tools -> Data-Operation -->
     <path d="M1100 410 V 492"/>
-    <path d="M570 455 H 597 V 600 H 935 V 529 H 968"/>
-    <path d="M640 342 H 605 V 372 H 242"/>
+    <!-- Data-Operation -> staff (read-only source, byte-identical copies) -->
+    <path d="M968 529 H 940 V 612 H 597 V 455 H 572"/>
+    <!-- dashboard server -> dashboard panel (cards + checks) -->
+    <path d="M620 342 H 605 V 372 H 242"/>
+    <!-- Gmail -> Board / CISO (FINAL report) -->
     <path d="M1100 686 C 900 740, 400 740, 240 560"/>
   </g>
   <text x="250" y="186" fill="#9DB2D1" font-size="12">trigger</text>
@@ -104,6 +113,6 @@
   <text x="574" y="347" fill="#9DB2D1" font-size="11">Run now</text>
   <text x="620" y="84" fill="#9DB2D1" font-size="12">every outbound action = outbox item (sha256 + human decision)</text>
   <text x="262" y="390" fill="#9DB2D1" font-size="11">cards + checks</text>
-  <text x="600" y="618" fill="#9DB2D1" font-size="12">evidence copies (byte-identical)</text>
+  <text x="660" y="632" fill="#9DB2D1" font-size="12">evidence copies (byte-identical)</text>
   <text x="560" y="734" fill="#9DB2D1" font-size="12">FINAL report by email, after handover</text>
 </svg>
